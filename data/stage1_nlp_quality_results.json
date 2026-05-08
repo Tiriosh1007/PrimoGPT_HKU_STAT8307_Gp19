@@ -1,0 +1,5524 @@
+{
+  "per_config": {
+    "gemini": {
+      "AAPL": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 727,
+            "zero_days": 26,
+            "nonzero_days": 701,
+            "zero_pct": 3.6,
+            "max_zero_streak": 2
+          },
+          "Sentiment": {
+            "total_days": 727,
+            "zero_days": 208,
+            "nonzero_days": 519,
+            "zero_pct": 28.6,
+            "max_zero_streak": 4
+          },
+          "Price Impact Potential": {
+            "total_days": 727,
+            "zero_days": 131,
+            "nonzero_days": 596,
+            "zero_pct": 18.0,
+            "max_zero_streak": 3
+          },
+          "Trend Direction": {
+            "total_days": 727,
+            "zero_days": 188,
+            "nonzero_days": 539,
+            "zero_pct": 25.9,
+            "max_zero_streak": 4
+          },
+          "Earnings Impact": {
+            "total_days": 727,
+            "zero_days": 296,
+            "nonzero_days": 431,
+            "zero_pct": 40.7,
+            "max_zero_streak": 7
+          },
+          "Investor Confidence": {
+            "total_days": 727,
+            "zero_days": 167,
+            "nonzero_days": 560,
+            "zero_pct": 23.0,
+            "max_zero_streak": 4
+          },
+          "Risk Profile Change": {
+            "total_days": 727,
+            "zero_days": 377,
+            "nonzero_days": 350,
+            "zero_pct": 51.9,
+            "max_zero_streak": 9
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 518,
+            "accuracy": 0.3398,
+            "p_value": 1.0
+          },
+          "Price Impact Potential": {
+            "n": 595,
+            "accuracy": 0.3496,
+            "p_value": 1.0
+          },
+          "Trend Direction": {
+            "n": 538,
+            "accuracy": 0.355,
+            "p_value": 1.0
+          },
+          "Earnings Impact": {
+            "n": 431,
+            "accuracy": 0.3411,
+            "p_value": 1.0
+          },
+          "Investor Confidence": {
+            "n": 559,
+            "accuracy": 0.3453,
+            "p_value": 1.0
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 518,
+            "f1": 0.267,
+            "baseline_f1": 0.1803
+          },
+          "Price Impact Potential": {
+            "n": 595,
+            "f1": 0.2748,
+            "baseline_f1": 0.18
+          },
+          "Trend Direction": {
+            "n": 538,
+            "f1": 0.2789,
+            "baseline_f1": 0.1787
+          },
+          "Earnings Impact": {
+            "n": 431,
+            "f1": 0.2669,
+            "baseline_f1": 0.1829
+          },
+          "Investor Confidence": {
+            "n": 559,
+            "f1": 0.2713,
+            "baseline_f1": 0.1839
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 726,
+            "pearson_r": 0.0738,
+            "pearson_p": 0.046972,
+            "spearman_r": 0.0529,
+            "spearman_p": 0.154146,
+            "ic": 0.0529
+          },
+          "Sentiment": {
+            "n": 726,
+            "pearson_r": -0.0014,
+            "pearson_p": 0.97083,
+            "spearman_r": -0.0071,
+            "spearman_p": 0.848093,
+            "ic": -0.0071
+          },
+          "Price Impact Potential": {
+            "n": 726,
+            "pearson_r": 0.0492,
+            "pearson_p": 0.185192,
+            "spearman_r": 0.0356,
+            "spearman_p": 0.33858,
+            "ic": 0.0356
+          },
+          "Trend Direction": {
+            "n": 726,
+            "pearson_r": 0.0341,
+            "pearson_p": 0.358605,
+            "spearman_r": 0.0313,
+            "spearman_p": 0.399646,
+            "ic": 0.0313
+          },
+          "Earnings Impact": {
+            "n": 726,
+            "pearson_r": 0.0172,
+            "pearson_p": 0.642731,
+            "spearman_r": -0.0036,
+            "spearman_p": 0.922652,
+            "ic": -0.0036
+          },
+          "Investor Confidence": {
+            "n": 726,
+            "pearson_r": 0.0392,
+            "pearson_p": 0.291782,
+            "spearman_r": 0.022,
+            "spearman_p": 0.554268,
+            "ic": 0.022
+          },
+          "Risk Profile Change": {
+            "n": 726,
+            "pearson_r": 0.0193,
+            "pearson_p": 0.603648,
+            "spearman_r": -0.0219,
+            "spearman_p": 0.556399,
+            "ic": -0.0219
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": 0.1027,
+            "mean_ret_without_signal": -0.0548,
+            "diff_bps": 15.75,
+            "t_stat": 1.133,
+            "p_value": 0.2576,
+            "n_with": 518,
+            "n_without": 208
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": 0.089,
+            "mean_ret_without_signal": -0.0854,
+            "diff_bps": 17.45,
+            "t_stat": 1.068,
+            "p_value": 0.2861,
+            "n_with": 595,
+            "n_without": 131
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": 0.0821,
+            "mean_ret_without_signal": -0.0126,
+            "diff_bps": 9.47,
+            "t_stat": 0.659,
+            "p_value": 0.5098,
+            "n_with": 538,
+            "n_without": 188
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": 0.1172,
+            "mean_ret_without_signal": -0.0295,
+            "diff_bps": 14.67,
+            "t_stat": 1.146,
+            "p_value": 0.2521,
+            "n_with": 431,
+            "n_without": 295
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": 0.1242,
+            "mean_ret_without_signal": -0.1655,
+            "diff_bps": 28.97,
+            "t_stat": 1.943,
+            "p_value": 0.0524,
+            "n_with": 559,
+            "n_without": 167
+          }
+        }
+      },
+      "AMZN": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 727,
+            "zero_days": 22,
+            "nonzero_days": 705,
+            "zero_pct": 3.0,
+            "max_zero_streak": 3
+          },
+          "Sentiment": {
+            "total_days": 727,
+            "zero_days": 191,
+            "nonzero_days": 536,
+            "zero_pct": 26.3,
+            "max_zero_streak": 4
+          },
+          "Price Impact Potential": {
+            "total_days": 727,
+            "zero_days": 120,
+            "nonzero_days": 607,
+            "zero_pct": 16.5,
+            "max_zero_streak": 4
+          },
+          "Trend Direction": {
+            "total_days": 727,
+            "zero_days": 190,
+            "nonzero_days": 537,
+            "zero_pct": 26.1,
+            "max_zero_streak": 4
+          },
+          "Earnings Impact": {
+            "total_days": 727,
+            "zero_days": 268,
+            "nonzero_days": 459,
+            "zero_pct": 36.9,
+            "max_zero_streak": 9
+          },
+          "Investor Confidence": {
+            "total_days": 727,
+            "zero_days": 147,
+            "nonzero_days": 580,
+            "zero_pct": 20.2,
+            "max_zero_streak": 4
+          },
+          "Risk Profile Change": {
+            "total_days": 727,
+            "zero_days": 485,
+            "nonzero_days": 242,
+            "zero_pct": 66.7,
+            "max_zero_streak": 41
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 535,
+            "accuracy": 0.3888,
+            "p_value": 1.0
+          },
+          "Price Impact Potential": {
+            "n": 606,
+            "accuracy": 0.401,
+            "p_value": 1.0
+          },
+          "Trend Direction": {
+            "n": 536,
+            "accuracy": 0.3974,
+            "p_value": 1.0
+          },
+          "Earnings Impact": {
+            "n": 458,
+            "accuracy": 0.3952,
+            "p_value": 1.0
+          },
+          "Investor Confidence": {
+            "n": 579,
+            "accuracy": 0.3869,
+            "p_value": 1.0
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 535,
+            "f1": 0.2801,
+            "baseline_f1": 0.1892
+          },
+          "Price Impact Potential": {
+            "n": 606,
+            "f1": 0.2959,
+            "baseline_f1": 0.1903
+          },
+          "Trend Direction": {
+            "n": 536,
+            "f1": 0.289,
+            "baseline_f1": 0.1889
+          },
+          "Earnings Impact": {
+            "n": 458,
+            "f1": 0.2711,
+            "baseline_f1": 0.1933
+          },
+          "Investor Confidence": {
+            "n": 579,
+            "f1": 0.2837,
+            "baseline_f1": 0.1913
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 726,
+            "pearson_r": 0.0186,
+            "pearson_p": 0.617751,
+            "spearman_r": 0.0295,
+            "spearman_p": 0.426698,
+            "ic": 0.0295
+          },
+          "Sentiment": {
+            "n": 726,
+            "pearson_r": 0.0271,
+            "pearson_p": 0.465536,
+            "spearman_r": -0.01,
+            "spearman_p": 0.787542,
+            "ic": -0.01
+          },
+          "Price Impact Potential": {
+            "n": 726,
+            "pearson_r": 0.0948,
+            "pearson_p": 0.010562,
+            "spearman_r": 0.0376,
+            "spearman_p": 0.311949,
+            "ic": 0.0376
+          },
+          "Trend Direction": {
+            "n": 726,
+            "pearson_r": 0.0469,
+            "pearson_p": 0.206487,
+            "spearman_r": 0.0112,
+            "spearman_p": 0.763997,
+            "ic": 0.0112
+          },
+          "Earnings Impact": {
+            "n": 726,
+            "pearson_r": 0.0864,
+            "pearson_p": 0.019899,
+            "spearman_r": 0.0182,
+            "spearman_p": 0.62359,
+            "ic": 0.0182
+          },
+          "Investor Confidence": {
+            "n": 726,
+            "pearson_r": 0.0615,
+            "pearson_p": 0.0979,
+            "spearman_r": 0.0121,
+            "spearman_p": 0.744487,
+            "ic": 0.0121
+          },
+          "Risk Profile Change": {
+            "n": 726,
+            "pearson_r": 0.0319,
+            "pearson_p": 0.390033,
+            "spearman_r": 0.0084,
+            "spearman_p": 0.820566,
+            "ic": 0.0084
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": 0.0121,
+            "mean_ret_without_signal": 0.1947,
+            "diff_bps": -18.25,
+            "t_stat": -0.935,
+            "p_value": 0.35,
+            "n_with": 535,
+            "n_without": 191
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": 0.0251,
+            "mean_ret_without_signal": 0.2372,
+            "diff_bps": -21.21,
+            "t_stat": -0.917,
+            "p_value": 0.3596,
+            "n_with": 606,
+            "n_without": 120
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": 0.013,
+            "mean_ret_without_signal": 0.1931,
+            "diff_bps": -18.01,
+            "t_stat": -0.921,
+            "p_value": 0.3573,
+            "n_with": 536,
+            "n_without": 190
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": 0.081,
+            "mean_ret_without_signal": 0.0245,
+            "diff_bps": 5.64,
+            "t_stat": 0.317,
+            "p_value": 0.7515,
+            "n_with": 458,
+            "n_without": 268
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": 0.046,
+            "mean_ret_without_signal": 0.1159,
+            "diff_bps": -7.0,
+            "t_stat": -0.327,
+            "p_value": 0.7438,
+            "n_with": 579,
+            "n_without": 147
+          }
+        }
+      },
+      "CRM": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 727,
+            "zero_days": 115,
+            "nonzero_days": 612,
+            "zero_pct": 15.8,
+            "max_zero_streak": 5
+          },
+          "Sentiment": {
+            "total_days": 727,
+            "zero_days": 240,
+            "nonzero_days": 487,
+            "zero_pct": 33.0,
+            "max_zero_streak": 14
+          },
+          "Price Impact Potential": {
+            "total_days": 727,
+            "zero_days": 223,
+            "nonzero_days": 504,
+            "zero_pct": 30.7,
+            "max_zero_streak": 10
+          },
+          "Trend Direction": {
+            "total_days": 727,
+            "zero_days": 257,
+            "nonzero_days": 470,
+            "zero_pct": 35.4,
+            "max_zero_streak": 14
+          },
+          "Earnings Impact": {
+            "total_days": 727,
+            "zero_days": 503,
+            "nonzero_days": 224,
+            "zero_pct": 69.2,
+            "max_zero_streak": 22
+          },
+          "Investor Confidence": {
+            "total_days": 727,
+            "zero_days": 240,
+            "nonzero_days": 487,
+            "zero_pct": 33.0,
+            "max_zero_streak": 14
+          },
+          "Risk Profile Change": {
+            "total_days": 727,
+            "zero_days": 629,
+            "nonzero_days": 98,
+            "zero_pct": 86.5,
+            "max_zero_streak": 49
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 486,
+            "accuracy": 0.4012,
+            "p_value": 1.0
+          },
+          "Price Impact Potential": {
+            "n": 503,
+            "accuracy": 0.4115,
+            "p_value": 1.0
+          },
+          "Trend Direction": {
+            "n": 469,
+            "accuracy": 0.403,
+            "p_value": 1.0
+          },
+          "Earnings Impact": {
+            "n": 223,
+            "accuracy": 0.3857,
+            "p_value": 0.9998
+          },
+          "Investor Confidence": {
+            "n": 486,
+            "accuracy": 0.4115,
+            "p_value": 1.0
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 486,
+            "f1": 0.3024,
+            "baseline_f1": 0.1852
+          },
+          "Price Impact Potential": {
+            "n": 503,
+            "f1": 0.3119,
+            "baseline_f1": 0.1842
+          },
+          "Trend Direction": {
+            "n": 469,
+            "f1": 0.3054,
+            "baseline_f1": 0.1849
+          },
+          "Earnings Impact": {
+            "n": 223,
+            "f1": 0.2744,
+            "baseline_f1": 0.1947
+          },
+          "Investor Confidence": {
+            "n": 486,
+            "f1": 0.3117,
+            "baseline_f1": 0.186
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 726,
+            "pearson_r": -0.0443,
+            "pearson_p": 0.233311,
+            "spearman_r": -0.0724,
+            "spearman_p": 0.051275,
+            "ic": -0.0724
+          },
+          "Sentiment": {
+            "n": 726,
+            "pearson_r": 0.0936,
+            "pearson_p": 0.011624,
+            "spearman_r": 0.0566,
+            "spearman_p": 0.127298,
+            "ic": 0.0566
+          },
+          "Price Impact Potential": {
+            "n": 726,
+            "pearson_r": 0.1728,
+            "pearson_p": 3e-06,
+            "spearman_r": 0.0945,
+            "spearman_p": 0.010822,
+            "ic": 0.0945
+          },
+          "Trend Direction": {
+            "n": 726,
+            "pearson_r": 0.1014,
+            "pearson_p": 0.006246,
+            "spearman_r": 0.0656,
+            "spearman_p": 0.077466,
+            "ic": 0.0656
+          },
+          "Earnings Impact": {
+            "n": 726,
+            "pearson_r": 0.0846,
+            "pearson_p": 0.02257,
+            "spearman_r": -0.0069,
+            "spearman_p": 0.85325,
+            "ic": -0.0069
+          },
+          "Investor Confidence": {
+            "n": 726,
+            "pearson_r": 0.1599,
+            "pearson_p": 1.5e-05,
+            "spearman_r": 0.0912,
+            "spearman_p": 0.013965,
+            "ic": 0.0912
+          },
+          "Risk Profile Change": {
+            "n": 726,
+            "pearson_r": 0.1801,
+            "pearson_p": 1e-06,
+            "spearman_r": 0.1129,
+            "spearman_p": 0.002318,
+            "ic": 0.1129
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": 0.0759,
+            "mean_ret_without_signal": 0.0737,
+            "diff_bps": 0.22,
+            "t_stat": 0.012,
+            "p_value": 0.9906,
+            "n_with": 486,
+            "n_without": 240
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": 0.0327,
+            "mean_ret_without_signal": 0.1709,
+            "diff_bps": -13.83,
+            "t_stat": -0.734,
+            "p_value": 0.4632,
+            "n_with": 503,
+            "n_without": 223
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": 0.0704,
+            "mean_ret_without_signal": 0.0838,
+            "diff_bps": -1.34,
+            "t_stat": -0.074,
+            "p_value": 0.9412,
+            "n_with": 469,
+            "n_without": 257
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": -0.0208,
+            "mean_ret_without_signal": 0.1177,
+            "diff_bps": -13.85,
+            "t_stat": -0.735,
+            "p_value": 0.4623,
+            "n_with": 223,
+            "n_without": 503
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": 0.0719,
+            "mean_ret_without_signal": 0.0818,
+            "diff_bps": -0.99,
+            "t_stat": -0.054,
+            "p_value": 0.9572,
+            "n_with": 486,
+            "n_without": 240
+          }
+        }
+      },
+      "MSFT": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 727,
+            "zero_days": 29,
+            "nonzero_days": 698,
+            "zero_pct": 4.0,
+            "max_zero_streak": 5
+          },
+          "Sentiment": {
+            "total_days": 727,
+            "zero_days": 223,
+            "nonzero_days": 504,
+            "zero_pct": 30.7,
+            "max_zero_streak": 5
+          },
+          "Price Impact Potential": {
+            "total_days": 727,
+            "zero_days": 130,
+            "nonzero_days": 597,
+            "zero_pct": 17.9,
+            "max_zero_streak": 5
+          },
+          "Trend Direction": {
+            "total_days": 727,
+            "zero_days": 197,
+            "nonzero_days": 530,
+            "zero_pct": 27.1,
+            "max_zero_streak": 5
+          },
+          "Earnings Impact": {
+            "total_days": 727,
+            "zero_days": 351,
+            "nonzero_days": 376,
+            "zero_pct": 48.3,
+            "max_zero_streak": 14
+          },
+          "Investor Confidence": {
+            "total_days": 727,
+            "zero_days": 155,
+            "nonzero_days": 572,
+            "zero_pct": 21.3,
+            "max_zero_streak": 5
+          },
+          "Risk Profile Change": {
+            "total_days": 727,
+            "zero_days": 447,
+            "nonzero_days": 280,
+            "zero_pct": 61.5,
+            "max_zero_streak": 17
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 504,
+            "accuracy": 0.3611,
+            "p_value": 1.0
+          },
+          "Price Impact Potential": {
+            "n": 597,
+            "accuracy": 0.3534,
+            "p_value": 1.0
+          },
+          "Trend Direction": {
+            "n": 530,
+            "accuracy": 0.3604,
+            "p_value": 1.0
+          },
+          "Earnings Impact": {
+            "n": 376,
+            "accuracy": 0.391,
+            "p_value": 1.0
+          },
+          "Investor Confidence": {
+            "n": 572,
+            "accuracy": 0.3462,
+            "p_value": 1.0
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 504,
+            "f1": 0.2797,
+            "baseline_f1": 0.1769
+          },
+          "Price Impact Potential": {
+            "n": 597,
+            "f1": 0.275,
+            "baseline_f1": 0.1801
+          },
+          "Trend Direction": {
+            "n": 530,
+            "f1": 0.2797,
+            "baseline_f1": 0.1786
+          },
+          "Earnings Impact": {
+            "n": 376,
+            "f1": 0.2868,
+            "baseline_f1": 0.1752
+          },
+          "Investor Confidence": {
+            "n": 572,
+            "f1": 0.2705,
+            "baseline_f1": 0.1797
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 726,
+            "pearson_r": -0.0062,
+            "pearson_p": 0.868282,
+            "spearman_r": -0.0185,
+            "spearman_p": 0.619251,
+            "ic": -0.0185
+          },
+          "Sentiment": {
+            "n": 726,
+            "pearson_r": 0.011,
+            "pearson_p": 0.767796,
+            "spearman_r": 0.0187,
+            "spearman_p": 0.615263,
+            "ic": 0.0187
+          },
+          "Price Impact Potential": {
+            "n": 726,
+            "pearson_r": 0.0115,
+            "pearson_p": 0.756135,
+            "spearman_r": 0.0098,
+            "spearman_p": 0.792174,
+            "ic": 0.0098
+          },
+          "Trend Direction": {
+            "n": 726,
+            "pearson_r": 0.0081,
+            "pearson_p": 0.826513,
+            "spearman_r": 0.0153,
+            "spearman_p": 0.680397,
+            "ic": 0.0153
+          },
+          "Earnings Impact": {
+            "n": 726,
+            "pearson_r": 0.0272,
+            "pearson_p": 0.464105,
+            "spearman_r": 0.047,
+            "spearman_p": 0.206177,
+            "ic": 0.047
+          },
+          "Investor Confidence": {
+            "n": 726,
+            "pearson_r": 0.0044,
+            "pearson_p": 0.904733,
+            "spearman_r": 0.0039,
+            "spearman_p": 0.916619,
+            "ic": 0.0039
+          },
+          "Risk Profile Change": {
+            "n": 726,
+            "pearson_r": -0.0138,
+            "pearson_p": 0.710015,
+            "spearman_r": -0.0221,
+            "spearman_p": 0.551489,
+            "ic": -0.0221
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": 0.0639,
+            "mean_ret_without_signal": 0.0212,
+            "diff_bps": 4.26,
+            "t_stat": 0.311,
+            "p_value": 0.756,
+            "n_with": 504,
+            "n_without": 222
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": 0.0447,
+            "mean_ret_without_signal": 0.0791,
+            "diff_bps": -3.43,
+            "t_stat": -0.208,
+            "p_value": 0.8355,
+            "n_with": 597,
+            "n_without": 129
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": 0.0553,
+            "mean_ret_without_signal": 0.0387,
+            "diff_bps": 1.66,
+            "t_stat": 0.117,
+            "p_value": 0.9073,
+            "n_with": 530,
+            "n_without": 196
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": 0.0115,
+            "mean_ret_without_signal": 0.093,
+            "diff_bps": -8.15,
+            "t_stat": -0.645,
+            "p_value": 0.5194,
+            "n_with": 376,
+            "n_without": 350
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": 0.0621,
+            "mean_ret_without_signal": 0.0088,
+            "diff_bps": 5.34,
+            "t_stat": 0.345,
+            "p_value": 0.7301,
+            "n_with": 572,
+            "n_without": 154
+          }
+        }
+      },
+      "NFLX": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 727,
+            "zero_days": 57,
+            "nonzero_days": 670,
+            "zero_pct": 7.8,
+            "max_zero_streak": 18
+          },
+          "Sentiment": {
+            "total_days": 727,
+            "zero_days": 202,
+            "nonzero_days": 525,
+            "zero_pct": 27.8,
+            "max_zero_streak": 19
+          },
+          "Price Impact Potential": {
+            "total_days": 727,
+            "zero_days": 150,
+            "nonzero_days": 577,
+            "zero_pct": 20.6,
+            "max_zero_streak": 19
+          },
+          "Trend Direction": {
+            "total_days": 727,
+            "zero_days": 194,
+            "nonzero_days": 533,
+            "zero_pct": 26.7,
+            "max_zero_streak": 19
+          },
+          "Earnings Impact": {
+            "total_days": 727,
+            "zero_days": 334,
+            "nonzero_days": 393,
+            "zero_pct": 45.9,
+            "max_zero_streak": 19
+          },
+          "Investor Confidence": {
+            "total_days": 727,
+            "zero_days": 185,
+            "nonzero_days": 542,
+            "zero_pct": 25.4,
+            "max_zero_streak": 19
+          },
+          "Risk Profile Change": {
+            "total_days": 727,
+            "zero_days": 508,
+            "nonzero_days": 219,
+            "zero_pct": 69.9,
+            "max_zero_streak": 24
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 525,
+            "accuracy": 0.4133,
+            "p_value": 1.0
+          },
+          "Price Impact Potential": {
+            "n": 577,
+            "accuracy": 0.4263,
+            "p_value": 0.9998
+          },
+          "Trend Direction": {
+            "n": 533,
+            "accuracy": 0.4259,
+            "p_value": 0.9997
+          },
+          "Earnings Impact": {
+            "n": 393,
+            "accuracy": 0.4377,
+            "p_value": 0.9942
+          },
+          "Investor Confidence": {
+            "n": 542,
+            "accuracy": 0.428,
+            "p_value": 0.9997
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 525,
+            "f1": 0.3017,
+            "baseline_f1": 0.1981
+          },
+          "Price Impact Potential": {
+            "n": 577,
+            "f1": 0.3143,
+            "baseline_f1": 0.1958
+          },
+          "Trend Direction": {
+            "n": 533,
+            "f1": 0.3102,
+            "baseline_f1": 0.2016
+          },
+          "Earnings Impact": {
+            "n": 393,
+            "f1": 0.3104,
+            "baseline_f1": 0.2038
+          },
+          "Investor Confidence": {
+            "n": 542,
+            "f1": 0.3145,
+            "baseline_f1": 0.1968
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 726,
+            "pearson_r": 0.0286,
+            "pearson_p": 0.441736,
+            "spearman_r": 0.0212,
+            "spearman_p": 0.568661,
+            "ic": 0.0212
+          },
+          "Sentiment": {
+            "n": 726,
+            "pearson_r": 0.035,
+            "pearson_p": 0.345934,
+            "spearman_r": 0.018,
+            "spearman_p": 0.627587,
+            "ic": 0.018
+          },
+          "Price Impact Potential": {
+            "n": 726,
+            "pearson_r": 0.1057,
+            "pearson_p": 0.004358,
+            "spearman_r": 0.0409,
+            "spearman_p": 0.270674,
+            "ic": 0.0409
+          },
+          "Trend Direction": {
+            "n": 726,
+            "pearson_r": 0.0545,
+            "pearson_p": 0.142349,
+            "spearman_r": 0.0374,
+            "spearman_p": 0.314684,
+            "ic": 0.0374
+          },
+          "Earnings Impact": {
+            "n": 726,
+            "pearson_r": 0.1064,
+            "pearson_p": 0.004091,
+            "spearman_r": 0.0577,
+            "spearman_p": 0.12063,
+            "ic": 0.0577
+          },
+          "Investor Confidence": {
+            "n": 726,
+            "pearson_r": 0.0995,
+            "pearson_p": 0.007312,
+            "spearman_r": 0.0431,
+            "spearman_p": 0.245845,
+            "ic": 0.0431
+          },
+          "Risk Profile Change": {
+            "n": 726,
+            "pearson_r": 0.0813,
+            "pearson_p": 0.028417,
+            "spearman_r": -0.0015,
+            "spearman_p": 0.967433,
+            "ic": -0.0015
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": 0.21,
+            "mean_ret_without_signal": 0.0748,
+            "diff_bps": 13.52,
+            "t_stat": 0.559,
+            "p_value": 0.5764,
+            "n_with": 525,
+            "n_without": 201
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": 0.185,
+            "mean_ret_without_signal": 0.1244,
+            "diff_bps": 6.06,
+            "t_stat": 0.226,
+            "p_value": 0.8213,
+            "n_with": 577,
+            "n_without": 149
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": 0.2405,
+            "mean_ret_without_signal": -0.0153,
+            "diff_bps": 25.58,
+            "t_stat": 1.045,
+            "p_value": 0.2963,
+            "n_with": 533,
+            "n_without": 193
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": 0.3318,
+            "mean_ret_without_signal": -0.0154,
+            "diff_bps": 34.71,
+            "t_stat": 1.601,
+            "p_value": 0.1098,
+            "n_with": 393,
+            "n_without": 333
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": 0.1863,
+            "mean_ret_without_signal": 0.1321,
+            "diff_bps": 5.42,
+            "t_stat": 0.218,
+            "p_value": 0.8275,
+            "n_with": 542,
+            "n_without": 184
+          }
+        }
+      }
+    },
+    "qwen_base": {
+      "AAPL": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 290,
+            "nonzero_days": 438,
+            "zero_pct": 39.8,
+            "max_zero_streak": 6
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 602,
+            "nonzero_days": 126,
+            "zero_pct": 82.7,
+            "max_zero_streak": 28
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 349,
+            "nonzero_days": 379,
+            "zero_pct": 47.9,
+            "max_zero_streak": 8
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 380,
+            "nonzero_days": 348,
+            "zero_pct": 52.2,
+            "max_zero_streak": 10
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 437,
+            "nonzero_days": 291,
+            "zero_pct": 60.0,
+            "max_zero_streak": 11
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 349,
+            "nonzero_days": 379,
+            "zero_pct": 47.9,
+            "max_zero_streak": 8
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 463,
+            "nonzero_days": 265,
+            "zero_pct": 63.6,
+            "max_zero_streak": 12
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 126,
+            "accuracy": 0.3016,
+            "p_value": 1.0
+          },
+          "Price Impact Potential": {
+            "n": 379,
+            "accuracy": 0.343,
+            "p_value": 1.0
+          },
+          "Trend Direction": {
+            "n": 348,
+            "accuracy": 0.3477,
+            "p_value": 1.0
+          },
+          "Earnings Impact": {
+            "n": 291,
+            "accuracy": 0.354,
+            "p_value": 1.0
+          },
+          "Investor Confidence": {
+            "n": 379,
+            "accuracy": 0.3404,
+            "p_value": 1.0
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 126,
+            "f1": 0.2411,
+            "baseline_f1": 0.1696
+          },
+          "Price Impact Potential": {
+            "n": 379,
+            "f1": 0.269,
+            "baseline_f1": 0.1808
+          },
+          "Trend Direction": {
+            "n": 348,
+            "f1": 0.2733,
+            "baseline_f1": 0.1751
+          },
+          "Earnings Impact": {
+            "n": 291,
+            "f1": 0.2808,
+            "baseline_f1": 0.1768
+          },
+          "Investor Confidence": {
+            "n": 379,
+            "f1": 0.2663,
+            "baseline_f1": 0.1798
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": 0.0205,
+            "pearson_p": 0.581765,
+            "spearman_r": 0.0253,
+            "spearman_p": 0.496171,
+            "ic": 0.0253
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": -0.0519,
+            "pearson_p": 0.162155,
+            "spearman_r": -0.0404,
+            "spearman_p": 0.277041,
+            "ic": -0.0404
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": -0.0145,
+            "pearson_p": 0.69583,
+            "spearman_r": -0.0155,
+            "spearman_p": 0.677398,
+            "ic": -0.0155
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": -0.0091,
+            "pearson_p": 0.807198,
+            "spearman_r": -0.0085,
+            "spearman_p": 0.819681,
+            "ic": -0.0085
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": -0.0091,
+            "pearson_p": 0.805912,
+            "spearman_r": 0.008,
+            "spearman_p": 0.829321,
+            "ic": 0.008
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": -0.0131,
+            "pearson_p": 0.724291,
+            "spearman_r": -0.0136,
+            "spearman_p": 0.714444,
+            "ic": -0.0136
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": -0.0381,
+            "pearson_p": 0.305296,
+            "spearman_r": -0.0049,
+            "spearman_p": 0.895267,
+            "ic": -0.0049
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": -0.0567,
+            "mean_ret_without_signal": 0.0793,
+            "diff_bps": -13.6,
+            "t_stat": -0.82,
+            "p_value": 0.4127,
+            "n_with": 126,
+            "n_without": 601
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": 0.0203,
+            "mean_ret_without_signal": 0.0944,
+            "diff_bps": -7.41,
+            "t_stat": -0.589,
+            "p_value": 0.556,
+            "n_with": 379,
+            "n_without": 348
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": -0.038,
+            "mean_ret_without_signal": 0.1418,
+            "diff_bps": -17.98,
+            "t_stat": -1.431,
+            "p_value": 0.1528,
+            "n_with": 348,
+            "n_without": 379
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": 0.0266,
+            "mean_ret_without_signal": 0.0752,
+            "diff_bps": -4.87,
+            "t_stat": -0.379,
+            "p_value": 0.7045,
+            "n_with": 291,
+            "n_without": 436
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": 0.0196,
+            "mean_ret_without_signal": 0.0951,
+            "diff_bps": -7.55,
+            "t_stat": -0.6,
+            "p_value": 0.5487,
+            "n_with": 379,
+            "n_without": 348
+          }
+        }
+      },
+      "AMZN": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 293,
+            "nonzero_days": 435,
+            "zero_pct": 40.2,
+            "max_zero_streak": 7
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 584,
+            "nonzero_days": 144,
+            "zero_pct": 80.2,
+            "max_zero_streak": 29
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 347,
+            "nonzero_days": 381,
+            "zero_pct": 47.7,
+            "max_zero_streak": 7
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 361,
+            "nonzero_days": 367,
+            "zero_pct": 49.6,
+            "max_zero_streak": 7
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 436,
+            "nonzero_days": 292,
+            "zero_pct": 59.9,
+            "max_zero_streak": 11
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 352,
+            "nonzero_days": 376,
+            "zero_pct": 48.4,
+            "max_zero_streak": 8
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 539,
+            "nonzero_days": 189,
+            "zero_pct": 74.0,
+            "max_zero_streak": 15
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 144,
+            "accuracy": 0.375,
+            "p_value": 0.999
+          },
+          "Price Impact Potential": {
+            "n": 381,
+            "accuracy": 0.3753,
+            "p_value": 1.0
+          },
+          "Trend Direction": {
+            "n": 367,
+            "accuracy": 0.3842,
+            "p_value": 1.0
+          },
+          "Earnings Impact": {
+            "n": 292,
+            "accuracy": 0.3904,
+            "p_value": 0.9999
+          },
+          "Investor Confidence": {
+            "n": 376,
+            "accuracy": 0.3697,
+            "p_value": 1.0
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 144,
+            "f1": 0.2674,
+            "baseline_f1": 0.1794
+          },
+          "Price Impact Potential": {
+            "n": 381,
+            "f1": 0.2813,
+            "baseline_f1": 0.1865
+          },
+          "Trend Direction": {
+            "n": 367,
+            "f1": 0.2868,
+            "baseline_f1": 0.1879
+          },
+          "Earnings Impact": {
+            "n": 292,
+            "f1": 0.2709,
+            "baseline_f1": 0.1976
+          },
+          "Investor Confidence": {
+            "n": 376,
+            "f1": 0.277,
+            "baseline_f1": 0.1865
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": 0.0601,
+            "pearson_p": 0.105409,
+            "spearman_r": 0.0683,
+            "spearman_p": 0.065779,
+            "ic": 0.0683
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": -0.004,
+            "pearson_p": 0.913681,
+            "spearman_r": -0.0112,
+            "spearman_p": 0.763494,
+            "ic": -0.0112
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": 0.0079,
+            "pearson_p": 0.832568,
+            "spearman_r": -0.0262,
+            "spearman_p": 0.481052,
+            "ic": -0.0262
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": 0.0079,
+            "pearson_p": 0.832204,
+            "spearman_r": -0.0118,
+            "spearman_p": 0.751659,
+            "ic": -0.0118
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": 0.0169,
+            "pearson_p": 0.648407,
+            "spearman_r": -0.0089,
+            "spearman_p": 0.811713,
+            "ic": -0.0089
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": -0.0024,
+            "pearson_p": 0.947959,
+            "spearman_r": -0.0337,
+            "spearman_p": 0.36481,
+            "ic": -0.0337
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": 0.0743,
+            "pearson_p": 0.045325,
+            "spearman_r": 0.0419,
+            "spearman_p": 0.258715,
+            "ic": 0.0419
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": -0.0117,
+            "mean_ret_without_signal": 0.0733,
+            "diff_bps": -8.5,
+            "t_stat": -0.394,
+            "p_value": 0.6936,
+            "n_with": 144,
+            "n_without": 583
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": 0.0473,
+            "mean_ret_without_signal": 0.0666,
+            "diff_bps": -1.93,
+            "t_stat": -0.112,
+            "p_value": 0.9106,
+            "n_with": 381,
+            "n_without": 346
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": -0.0102,
+            "mean_ret_without_signal": 0.1244,
+            "diff_bps": -13.46,
+            "t_stat": -0.783,
+            "p_value": 0.4337,
+            "n_with": 367,
+            "n_without": 360
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": 0.2352,
+            "mean_ret_without_signal": -0.0635,
+            "diff_bps": 29.87,
+            "t_stat": 1.707,
+            "p_value": 0.0883,
+            "n_with": 292,
+            "n_without": 435
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": 0.0426,
+            "mean_ret_without_signal": 0.0713,
+            "diff_bps": -2.86,
+            "t_stat": -0.166,
+            "p_value": 0.8678,
+            "n_with": 376,
+            "n_without": 351
+          }
+        }
+      },
+      "CRM": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 301,
+            "nonzero_days": 427,
+            "zero_pct": 41.3,
+            "max_zero_streak": 6
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 588,
+            "nonzero_days": 140,
+            "zero_pct": 80.8,
+            "max_zero_streak": 42
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 363,
+            "nonzero_days": 365,
+            "zero_pct": 49.9,
+            "max_zero_streak": 13
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 365,
+            "nonzero_days": 363,
+            "zero_pct": 50.1,
+            "max_zero_streak": 10
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 542,
+            "nonzero_days": 186,
+            "zero_pct": 74.5,
+            "max_zero_streak": 20
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 359,
+            "nonzero_days": 369,
+            "zero_pct": 49.3,
+            "max_zero_streak": 13
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 601,
+            "nonzero_days": 127,
+            "zero_pct": 82.6,
+            "max_zero_streak": 29
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 140,
+            "accuracy": 0.4071,
+            "p_value": 0.9889
+          },
+          "Price Impact Potential": {
+            "n": 365,
+            "accuracy": 0.411,
+            "p_value": 0.9997
+          },
+          "Trend Direction": {
+            "n": 363,
+            "accuracy": 0.405,
+            "p_value": 0.9999
+          },
+          "Earnings Impact": {
+            "n": 186,
+            "accuracy": 0.4032,
+            "p_value": 0.9967
+          },
+          "Investor Confidence": {
+            "n": 369,
+            "accuracy": 0.4038,
+            "p_value": 0.9999
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 140,
+            "f1": 0.3117,
+            "baseline_f1": 0.1953
+          },
+          "Price Impact Potential": {
+            "n": 365,
+            "f1": 0.3119,
+            "baseline_f1": 0.1914
+          },
+          "Trend Direction": {
+            "n": 363,
+            "f1": 0.3073,
+            "baseline_f1": 0.1922
+          },
+          "Earnings Impact": {
+            "n": 186,
+            "f1": 0.3054,
+            "baseline_f1": 0.1952
+          },
+          "Investor Confidence": {
+            "n": 369,
+            "f1": 0.3095,
+            "baseline_f1": 0.1862
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": -0.0649,
+            "pearson_p": 0.080532,
+            "spearman_r": -0.0804,
+            "spearman_p": 0.030128,
+            "ic": -0.0804
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": 0.0847,
+            "pearson_p": 0.02233,
+            "spearman_r": 0.0619,
+            "spearman_p": 0.095427,
+            "ic": 0.0619
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": 0.1292,
+            "pearson_p": 0.000481,
+            "spearman_r": 0.0866,
+            "spearman_p": 0.019513,
+            "ic": 0.0866
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": 0.0836,
+            "pearson_p": 0.024194,
+            "spearman_r": 0.0649,
+            "spearman_p": 0.080241,
+            "ic": 0.0649
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": 0.1014,
+            "pearson_p": 0.00623,
+            "spearman_r": 0.0475,
+            "spearman_p": 0.200476,
+            "ic": 0.0475
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": 0.1273,
+            "pearson_p": 0.000581,
+            "spearman_r": 0.088,
+            "spearman_p": 0.017581,
+            "ic": 0.088
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": 0.0229,
+            "pearson_p": 0.537924,
+            "spearman_r": 0.0137,
+            "spearman_p": 0.712601,
+            "ic": 0.0137
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": -0.0722,
+            "mean_ret_without_signal": 0.1033,
+            "diff_bps": -17.55,
+            "t_stat": -0.796,
+            "p_value": 0.4265,
+            "n_with": 140,
+            "n_without": 587
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": -0.1173,
+            "mean_ret_without_signal": 0.2578,
+            "diff_bps": -37.51,
+            "t_stat": -2.163,
+            "p_value": 0.0309,
+            "n_with": 365,
+            "n_without": 362
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": -0.1548,
+            "mean_ret_without_signal": 0.2932,
+            "diff_bps": -44.8,
+            "t_stat": -2.587,
+            "p_value": 0.0099,
+            "n_with": 363,
+            "n_without": 364
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": -0.1482,
+            "mean_ret_without_signal": 0.1443,
+            "diff_bps": -29.25,
+            "t_stat": -1.469,
+            "p_value": 0.1422,
+            "n_with": 186,
+            "n_without": 541
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": -0.0905,
+            "mean_ret_without_signal": 0.2343,
+            "diff_bps": -32.48,
+            "t_stat": -1.871,
+            "p_value": 0.0617,
+            "n_with": 369,
+            "n_without": 358
+          }
+        }
+      },
+      "MSFT": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 284,
+            "nonzero_days": 444,
+            "zero_pct": 39.0,
+            "max_zero_streak": 5
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 594,
+            "nonzero_days": 134,
+            "zero_pct": 81.6,
+            "max_zero_streak": 28
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 355,
+            "nonzero_days": 373,
+            "zero_pct": 48.8,
+            "max_zero_streak": 6
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 370,
+            "nonzero_days": 358,
+            "zero_pct": 50.8,
+            "max_zero_streak": 9
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 450,
+            "nonzero_days": 278,
+            "zero_pct": 61.8,
+            "max_zero_streak": 11
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 346,
+            "nonzero_days": 382,
+            "zero_pct": 47.5,
+            "max_zero_streak": 6
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 528,
+            "nonzero_days": 200,
+            "zero_pct": 72.5,
+            "max_zero_streak": 16
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 134,
+            "accuracy": 0.3731,
+            "p_value": 0.9988
+          },
+          "Price Impact Potential": {
+            "n": 372,
+            "accuracy": 0.371,
+            "p_value": 1.0
+          },
+          "Trend Direction": {
+            "n": 357,
+            "accuracy": 0.3838,
+            "p_value": 1.0
+          },
+          "Earnings Impact": {
+            "n": 278,
+            "accuracy": 0.3849,
+            "p_value": 1.0
+          },
+          "Investor Confidence": {
+            "n": 381,
+            "accuracy": 0.378,
+            "p_value": 1.0
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 134,
+            "f1": 0.2457,
+            "baseline_f1": 0.1864
+          },
+          "Price Impact Potential": {
+            "n": 372,
+            "f1": 0.2844,
+            "baseline_f1": 0.1823
+          },
+          "Trend Direction": {
+            "n": 357,
+            "f1": 0.291,
+            "baseline_f1": 0.1819
+          },
+          "Earnings Impact": {
+            "n": 278,
+            "f1": 0.2697,
+            "baseline_f1": 0.1878
+          },
+          "Investor Confidence": {
+            "n": 381,
+            "f1": 0.2881,
+            "baseline_f1": 0.1847
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": 0.0246,
+            "pearson_p": 0.508194,
+            "spearman_r": 0.0188,
+            "spearman_p": 0.613124,
+            "ic": 0.0188
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": -0.0116,
+            "pearson_p": 0.754016,
+            "spearman_r": 0.002,
+            "spearman_p": 0.957523,
+            "ic": 0.002
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": -0.0021,
+            "pearson_p": 0.954862,
+            "spearman_r": 0.0083,
+            "spearman_p": 0.822795,
+            "ic": 0.0083
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": 0.0107,
+            "pearson_p": 0.772756,
+            "spearman_r": 0.0246,
+            "spearman_p": 0.508167,
+            "ic": 0.0246
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": -0.0156,
+            "pearson_p": 0.673588,
+            "spearman_r": 0.0204,
+            "spearman_p": 0.582546,
+            "ic": 0.0204
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": 0.0125,
+            "pearson_p": 0.736956,
+            "spearman_r": 0.0184,
+            "spearman_p": 0.619843,
+            "ic": 0.0184
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": 0.0528,
+            "pearson_p": 0.155131,
+            "spearman_r": 0.0432,
+            "spearman_p": 0.244723,
+            "ic": 0.0432
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": 0.1019,
+            "mean_ret_without_signal": 0.0361,
+            "diff_bps": 6.58,
+            "t_stat": 0.404,
+            "p_value": 0.6865,
+            "n_with": 134,
+            "n_without": 593
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": 0.0282,
+            "mean_ret_without_signal": 0.0693,
+            "diff_bps": -4.1,
+            "t_stat": -0.325,
+            "p_value": 0.7454,
+            "n_with": 372,
+            "n_without": 355
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": 0.0297,
+            "mean_ret_without_signal": 0.0662,
+            "diff_bps": -3.65,
+            "t_stat": -0.289,
+            "p_value": 0.7724,
+            "n_with": 357,
+            "n_without": 370
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": 0.1021,
+            "mean_ret_without_signal": 0.015,
+            "diff_bps": 8.71,
+            "t_stat": 0.671,
+            "p_value": 0.5027,
+            "n_with": 278,
+            "n_without": 449
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": 0.0396,
+            "mean_ret_without_signal": 0.0578,
+            "diff_bps": -1.81,
+            "t_stat": -0.143,
+            "p_value": 0.8861,
+            "n_with": 381,
+            "n_without": 346
+          }
+        }
+      },
+      "NFLX": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 299,
+            "nonzero_days": 429,
+            "zero_pct": 41.1,
+            "max_zero_streak": 19
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 573,
+            "nonzero_days": 155,
+            "zero_pct": 78.7,
+            "max_zero_streak": 25
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 352,
+            "nonzero_days": 376,
+            "zero_pct": 48.4,
+            "max_zero_streak": 15
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 363,
+            "nonzero_days": 365,
+            "zero_pct": 49.9,
+            "max_zero_streak": 14
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 449,
+            "nonzero_days": 279,
+            "zero_pct": 61.7,
+            "max_zero_streak": 19
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 346,
+            "nonzero_days": 382,
+            "zero_pct": 47.5,
+            "max_zero_streak": 19
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 548,
+            "nonzero_days": 180,
+            "zero_pct": 75.3,
+            "max_zero_streak": 27
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 154,
+            "accuracy": 0.461,
+            "p_value": 0.8526
+          },
+          "Price Impact Potential": {
+            "n": 375,
+            "accuracy": 0.448,
+            "p_value": 0.9806
+          },
+          "Trend Direction": {
+            "n": 364,
+            "accuracy": 0.4478,
+            "p_value": 0.9796
+          },
+          "Earnings Impact": {
+            "n": 278,
+            "accuracy": 0.4424,
+            "p_value": 0.9762
+          },
+          "Investor Confidence": {
+            "n": 381,
+            "accuracy": 0.4488,
+            "p_value": 0.9799
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 154,
+            "f1": 0.3046,
+            "baseline_f1": 0.2083
+          },
+          "Price Impact Potential": {
+            "n": 375,
+            "f1": 0.3308,
+            "baseline_f1": 0.195
+          },
+          "Trend Direction": {
+            "n": 364,
+            "f1": 0.3278,
+            "baseline_f1": 0.1964
+          },
+          "Earnings Impact": {
+            "n": 278,
+            "f1": 0.3144,
+            "baseline_f1": 0.2091
+          },
+          "Investor Confidence": {
+            "n": 381,
+            "f1": 0.3313,
+            "baseline_f1": 0.1963
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": 0.064,
+            "pearson_p": 0.084634,
+            "spearman_r": 0.0233,
+            "spearman_p": 0.529849,
+            "ic": 0.0233
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": 0.0684,
+            "pearson_p": 0.06513,
+            "spearman_r": 0.0729,
+            "spearman_p": 0.04955,
+            "ic": 0.0729
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": 0.1022,
+            "pearson_p": 0.005796,
+            "spearman_r": 0.0937,
+            "spearman_p": 0.011527,
+            "ic": 0.0937
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": 0.0732,
+            "pearson_p": 0.048552,
+            "spearman_r": 0.076,
+            "spearman_p": 0.040399,
+            "ic": 0.076
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": 0.0776,
+            "pearson_p": 0.036531,
+            "spearman_r": 0.0632,
+            "spearman_p": 0.088826,
+            "ic": 0.0632
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": 0.0935,
+            "pearson_p": 0.011637,
+            "spearman_r": 0.0916,
+            "spearman_p": 0.013525,
+            "ic": 0.0916
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": 0.0562,
+            "pearson_p": 0.130089,
+            "spearman_r": 0.0519,
+            "spearman_p": 0.162308,
+            "ic": 0.0519
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": 0.5805,
+            "mean_ret_without_signal": 0.0578,
+            "diff_bps": 52.26,
+            "t_stat": 1.98,
+            "p_value": 0.0481,
+            "n_with": 154,
+            "n_without": 573
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": 0.3242,
+            "mean_ret_without_signal": 0.0027,
+            "diff_bps": 32.15,
+            "t_stat": 1.488,
+            "p_value": 0.1372,
+            "n_with": 375,
+            "n_without": 352
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": 0.3237,
+            "mean_ret_without_signal": 0.013,
+            "diff_bps": 31.07,
+            "t_stat": 1.439,
+            "p_value": 0.1507,
+            "n_with": 364,
+            "n_without": 363
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": 0.5149,
+            "mean_ret_without_signal": -0.0459,
+            "diff_bps": 56.08,
+            "t_stat": 2.531,
+            "p_value": 0.0116,
+            "n_with": 278,
+            "n_without": 449
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": 0.2978,
+            "mean_ret_without_signal": 0.0262,
+            "diff_bps": 27.15,
+            "t_stat": 1.255,
+            "p_value": 0.2098,
+            "n_with": 381,
+            "n_without": 346
+          }
+        }
+      }
+    },
+    "qwen_qlora": {
+      "AAPL": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 500,
+            "nonzero_days": 228,
+            "zero_pct": 68.7,
+            "max_zero_streak": 16
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 623,
+            "nonzero_days": 105,
+            "zero_pct": 85.6,
+            "max_zero_streak": 48
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 548,
+            "nonzero_days": 180,
+            "zero_pct": 75.3,
+            "max_zero_streak": 17
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 556,
+            "nonzero_days": 172,
+            "zero_pct": 76.4,
+            "max_zero_streak": 19
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 676,
+            "nonzero_days": 52,
+            "zero_pct": 92.9,
+            "max_zero_streak": 64
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 607,
+            "nonzero_days": 121,
+            "zero_pct": 83.4,
+            "max_zero_streak": 24
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 659,
+            "nonzero_days": 69,
+            "zero_pct": 90.5,
+            "max_zero_streak": 48
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 105,
+            "accuracy": 0.3524,
+            "p_value": 0.9992
+          },
+          "Price Impact Potential": {
+            "n": 180,
+            "accuracy": 0.3333,
+            "p_value": 1.0
+          },
+          "Trend Direction": {
+            "n": 172,
+            "accuracy": 0.343,
+            "p_value": 1.0
+          },
+          "Earnings Impact": {
+            "n": 52,
+            "accuracy": 0.25,
+            "p_value": 0.9999
+          },
+          "Investor Confidence": {
+            "n": 121,
+            "accuracy": 0.3471,
+            "p_value": 0.9998
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 105,
+            "f1": 0.2595,
+            "baseline_f1": 0.1905
+          },
+          "Price Impact Potential": {
+            "n": 180,
+            "f1": 0.2532,
+            "baseline_f1": 0.1847
+          },
+          "Trend Direction": {
+            "n": 172,
+            "f1": 0.2662,
+            "baseline_f1": 0.1787
+          },
+          "Earnings Impact": {
+            "n": 52,
+            "f1": 0.175,
+            "baseline_f1": 0.1784
+          },
+          "Investor Confidence": {
+            "n": 121,
+            "f1": 0.2625,
+            "baseline_f1": 0.1836
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": -0.0545,
+            "pearson_p": 0.142074,
+            "spearman_r": -0.0492,
+            "spearman_p": 0.185033,
+            "ic": -0.0492
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": 0.0205,
+            "pearson_p": 0.581879,
+            "spearman_r": 0.0007,
+            "spearman_p": 0.985803,
+            "ic": 0.0007
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": 0.0004,
+            "pearson_p": 0.991369,
+            "spearman_r": -0.0285,
+            "spearman_p": 0.44247,
+            "ic": -0.0285
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": 0.0041,
+            "pearson_p": 0.911868,
+            "spearman_r": -0.0017,
+            "spearman_p": 0.96306,
+            "ic": -0.0017
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": 0.0178,
+            "pearson_p": 0.631831,
+            "spearman_r": -0.021,
+            "spearman_p": 0.571876,
+            "ic": -0.021
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": 0.0385,
+            "pearson_p": 0.299281,
+            "spearman_r": 0.0238,
+            "spearman_p": 0.522383,
+            "ic": 0.0238
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": -0.0318,
+            "pearson_p": 0.39189,
+            "spearman_r": -0.016,
+            "spearman_p": 0.666973,
+            "ic": -0.016
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": -0.228,
+            "mean_ret_without_signal": 0.1036,
+            "diff_bps": -33.17,
+            "t_stat": -1.86,
+            "p_value": 0.0634,
+            "n_with": 105,
+            "n_without": 622
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": -0.1437,
+            "mean_ret_without_signal": 0.1213,
+            "diff_bps": -26.5,
+            "t_stat": -1.824,
+            "p_value": 0.0685,
+            "n_with": 180,
+            "n_without": 547
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": -0.0078,
+            "mean_ret_without_signal": 0.0754,
+            "diff_bps": -8.32,
+            "t_stat": -0.563,
+            "p_value": 0.5736,
+            "n_with": 172,
+            "n_without": 555
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": -0.319,
+            "mean_ret_without_signal": 0.0846,
+            "diff_bps": -40.37,
+            "t_stat": -1.658,
+            "p_value": 0.0977,
+            "n_with": 52,
+            "n_without": 675
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": -0.1579,
+            "mean_ret_without_signal": 0.0984,
+            "diff_bps": -25.63,
+            "t_stat": -1.522,
+            "p_value": 0.1285,
+            "n_with": 121,
+            "n_without": 606
+          }
+        }
+      },
+      "AMZN": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 544,
+            "nonzero_days": 184,
+            "zero_pct": 74.7,
+            "max_zero_streak": 21
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 644,
+            "nonzero_days": 84,
+            "zero_pct": 88.5,
+            "max_zero_streak": 34
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 592,
+            "nonzero_days": 136,
+            "zero_pct": 81.3,
+            "max_zero_streak": 33
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 551,
+            "nonzero_days": 177,
+            "zero_pct": 75.7,
+            "max_zero_streak": 19
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 686,
+            "nonzero_days": 42,
+            "zero_pct": 94.2,
+            "max_zero_streak": 99
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 627,
+            "nonzero_days": 101,
+            "zero_pct": 86.1,
+            "max_zero_streak": 34
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 670,
+            "nonzero_days": 58,
+            "zero_pct": 92.0,
+            "max_zero_streak": 60
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 84,
+            "accuracy": 0.4048,
+            "p_value": 0.9685
+          },
+          "Price Impact Potential": {
+            "n": 136,
+            "accuracy": 0.3971,
+            "p_value": 0.9937
+          },
+          "Trend Direction": {
+            "n": 177,
+            "accuracy": 0.4181,
+            "p_value": 0.9881
+          },
+          "Earnings Impact": {
+            "n": 42,
+            "accuracy": 0.4762,
+            "p_value": 0.678
+          },
+          "Investor Confidence": {
+            "n": 101,
+            "accuracy": 0.4059,
+            "p_value": 0.977
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 84,
+            "f1": 0.2836,
+            "baseline_f1": 0.2292
+          },
+          "Price Impact Potential": {
+            "n": 136,
+            "f1": 0.2977,
+            "baseline_f1": 0.2133
+          },
+          "Trend Direction": {
+            "n": 177,
+            "f1": 0.3094,
+            "baseline_f1": 0.1984
+          },
+          "Earnings Impact": {
+            "n": 42,
+            "f1": 0.3428,
+            "baseline_f1": 0.1921
+          },
+          "Investor Confidence": {
+            "n": 101,
+            "f1": 0.2845,
+            "baseline_f1": 0.2237
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": -0.0214,
+            "pearson_p": 0.564649,
+            "spearman_r": -0.0418,
+            "spearman_p": 0.260036,
+            "ic": -0.0418
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": 0.0148,
+            "pearson_p": 0.689796,
+            "spearman_r": 0.0239,
+            "spearman_p": 0.520545,
+            "ic": 0.0239
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": 0.0013,
+            "pearson_p": 0.971513,
+            "spearman_r": 0.0132,
+            "spearman_p": 0.721498,
+            "ic": 0.0132
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": 0.0325,
+            "pearson_p": 0.380893,
+            "spearman_r": 0.0357,
+            "spearman_p": 0.336333,
+            "ic": 0.0357
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": 0.075,
+            "pearson_p": 0.043144,
+            "spearman_r": 0.0366,
+            "spearman_p": 0.323928,
+            "ic": 0.0366
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": -0.0017,
+            "pearson_p": 0.963494,
+            "spearman_r": 0.0191,
+            "spearman_p": 0.607345,
+            "ic": 0.0191
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": 0.0303,
+            "pearson_p": 0.414143,
+            "spearman_r": 0.031,
+            "spearman_p": 0.40371,
+            "ic": 0.031
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": -0.672,
+            "mean_ret_without_signal": 0.1516,
+            "diff_bps": -82.37,
+            "t_stat": -3.083,
+            "p_value": 0.0021,
+            "n_with": 84,
+            "n_without": 643
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": -0.2514,
+            "mean_ret_without_signal": 0.1273,
+            "diff_bps": -37.87,
+            "t_stat": -1.722,
+            "p_value": 0.0856,
+            "n_with": 136,
+            "n_without": 591
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": 0.0042,
+            "mean_ret_without_signal": 0.0733,
+            "diff_bps": -6.9,
+            "t_stat": -0.345,
+            "p_value": 0.7304,
+            "n_with": 177,
+            "n_without": 550
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": 0.3323,
+            "mean_ret_without_signal": 0.0395,
+            "diff_bps": 29.27,
+            "t_stat": 0.795,
+            "p_value": 0.427,
+            "n_with": 42,
+            "n_without": 685
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": -0.4052,
+            "mean_ret_without_signal": 0.1309,
+            "diff_bps": -53.61,
+            "t_stat": -2.164,
+            "p_value": 0.0308,
+            "n_with": 101,
+            "n_without": 626
+          }
+        }
+      },
+      "CRM": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 438,
+            "nonzero_days": 290,
+            "zero_pct": 60.2,
+            "max_zero_streak": 11
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 597,
+            "nonzero_days": 131,
+            "zero_pct": 82.0,
+            "max_zero_streak": 28
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 568,
+            "nonzero_days": 160,
+            "zero_pct": 78.0,
+            "max_zero_streak": 23
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 554,
+            "nonzero_days": 174,
+            "zero_pct": 76.1,
+            "max_zero_streak": 20
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 689,
+            "nonzero_days": 39,
+            "zero_pct": 94.6,
+            "max_zero_streak": 85
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 586,
+            "nonzero_days": 142,
+            "zero_pct": 80.5,
+            "max_zero_streak": 18
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 690,
+            "nonzero_days": 38,
+            "zero_pct": 94.8,
+            "max_zero_streak": 109
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 131,
+            "accuracy": 0.458,
+            "p_value": 0.8528
+          },
+          "Price Impact Potential": {
+            "n": 160,
+            "accuracy": 0.45,
+            "p_value": 0.9106
+          },
+          "Trend Direction": {
+            "n": 174,
+            "accuracy": 0.4713,
+            "p_value": 0.7978
+          },
+          "Earnings Impact": {
+            "n": 39,
+            "accuracy": 0.4359,
+            "p_value": 0.8316
+          },
+          "Investor Confidence": {
+            "n": 141,
+            "accuracy": 0.4539,
+            "p_value": 0.8809
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 131,
+            "f1": 0.3477,
+            "baseline_f1": 0.1842
+          },
+          "Price Impact Potential": {
+            "n": 160,
+            "f1": 0.3378,
+            "baseline_f1": 0.1862
+          },
+          "Trend Direction": {
+            "n": 174,
+            "f1": 0.356,
+            "baseline_f1": 0.1873
+          },
+          "Earnings Impact": {
+            "n": 39,
+            "f1": 0.3051,
+            "baseline_f1": 0.2404
+          },
+          "Investor Confidence": {
+            "n": 141,
+            "f1": 0.3426,
+            "baseline_f1": 0.1846
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": -0.0393,
+            "pearson_p": 0.289946,
+            "spearman_r": -0.024,
+            "spearman_p": 0.518069,
+            "ic": -0.024
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": 0.1267,
+            "pearson_p": 0.000618,
+            "spearman_r": 0.0989,
+            "spearman_p": 0.007643,
+            "ic": 0.0989
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": 0.112,
+            "pearson_p": 0.002504,
+            "spearman_r": 0.0864,
+            "spearman_p": 0.019822,
+            "ic": 0.0864
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": 0.1203,
+            "pearson_p": 0.001149,
+            "spearman_r": 0.1141,
+            "spearman_p": 0.002055,
+            "ic": 0.1141
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": 0.1373,
+            "pearson_p": 0.000205,
+            "spearman_r": 0.0571,
+            "spearman_p": 0.123757,
+            "ic": 0.0571
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": 0.1391,
+            "pearson_p": 0.000168,
+            "spearman_r": 0.0992,
+            "spearman_p": 0.007461,
+            "ic": 0.0992
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": -0.1065,
+            "pearson_p": 0.004037,
+            "spearman_r": -0.0615,
+            "spearman_p": 0.097668,
+            "ic": -0.0615
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": -0.3219,
+            "mean_ret_without_signal": 0.1555,
+            "diff_bps": -47.74,
+            "t_stat": -2.116,
+            "p_value": 0.0347,
+            "n_with": 131,
+            "n_without": 596
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": -0.2493,
+            "mean_ret_without_signal": 0.1594,
+            "diff_bps": -40.87,
+            "t_stat": -1.952,
+            "p_value": 0.0514,
+            "n_with": 160,
+            "n_without": 567
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": -0.2016,
+            "mean_ret_without_signal": 0.1548,
+            "diff_bps": -35.64,
+            "t_stat": -1.752,
+            "p_value": 0.0803,
+            "n_with": 174,
+            "n_without": 553
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": -1.163,
+            "mean_ret_without_signal": 0.1393,
+            "diff_bps": -130.23,
+            "t_stat": -3.4,
+            "p_value": 0.0007,
+            "n_with": 39,
+            "n_without": 688
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": -0.3051,
+            "mean_ret_without_signal": 0.1596,
+            "diff_bps": -46.47,
+            "t_stat": -2.118,
+            "p_value": 0.0345,
+            "n_with": 141,
+            "n_without": 586
+          }
+        }
+      },
+      "MSFT": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 497,
+            "nonzero_days": 231,
+            "zero_pct": 68.3,
+            "max_zero_streak": 17
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 639,
+            "nonzero_days": 89,
+            "zero_pct": 87.8,
+            "max_zero_streak": 51
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 581,
+            "nonzero_days": 147,
+            "zero_pct": 79.8,
+            "max_zero_streak": 17
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 557,
+            "nonzero_days": 171,
+            "zero_pct": 76.5,
+            "max_zero_streak": 15
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 693,
+            "nonzero_days": 35,
+            "zero_pct": 95.2,
+            "max_zero_streak": 77
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 616,
+            "nonzero_days": 112,
+            "zero_pct": 84.6,
+            "max_zero_streak": 32
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 674,
+            "nonzero_days": 54,
+            "zero_pct": 92.6,
+            "max_zero_streak": 72
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 89,
+            "accuracy": 0.2921,
+            "p_value": 1.0
+          },
+          "Price Impact Potential": {
+            "n": 147,
+            "accuracy": 0.3537,
+            "p_value": 0.9999
+          },
+          "Trend Direction": {
+            "n": 171,
+            "accuracy": 0.3275,
+            "p_value": 1.0
+          },
+          "Earnings Impact": {
+            "n": 35,
+            "accuracy": 0.3714,
+            "p_value": 0.9552
+          },
+          "Investor Confidence": {
+            "n": 112,
+            "accuracy": 0.3482,
+            "p_value": 0.9996
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 89,
+            "f1": 0.2349,
+            "baseline_f1": 0.1763
+          },
+          "Price Impact Potential": {
+            "n": 147,
+            "f1": 0.2733,
+            "baseline_f1": 0.1717
+          },
+          "Trend Direction": {
+            "n": 171,
+            "f1": 0.2572,
+            "baseline_f1": 0.1836
+          },
+          "Earnings Impact": {
+            "n": 35,
+            "f1": 0.2891,
+            "baseline_f1": 0.1702
+          },
+          "Investor Confidence": {
+            "n": 112,
+            "f1": 0.2719,
+            "baseline_f1": 0.1849
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": 0.0233,
+            "pearson_p": 0.531291,
+            "spearman_r": -0.0043,
+            "spearman_p": 0.907426,
+            "ic": -0.0043
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": -0.0645,
+            "pearson_p": 0.082166,
+            "spearman_r": -0.038,
+            "spearman_p": 0.305996,
+            "ic": -0.038
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": -0.0477,
+            "pearson_p": 0.1992,
+            "spearman_r": -0.0089,
+            "spearman_p": 0.81154,
+            "ic": -0.0089
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": -0.0674,
+            "pearson_p": 0.069358,
+            "spearman_r": -0.0349,
+            "spearman_p": 0.348062,
+            "ic": -0.0349
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": 0.0141,
+            "pearson_p": 0.705076,
+            "spearman_r": 0.0165,
+            "spearman_p": 0.656193,
+            "ic": 0.0165
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": -0.0649,
+            "pearson_p": 0.080481,
+            "spearman_r": -0.0242,
+            "spearman_p": 0.514092,
+            "ic": -0.0242
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": 0.0402,
+            "pearson_p": 0.278813,
+            "spearman_r": 0.0003,
+            "spearman_p": 0.9935,
+            "ic": 0.0003
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": -0.1184,
+            "mean_ret_without_signal": 0.0715,
+            "diff_bps": -18.99,
+            "t_stat": -0.986,
+            "p_value": 0.3243,
+            "n_with": 89,
+            "n_without": 638
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": 0.0436,
+            "mean_ret_without_signal": 0.0495,
+            "diff_bps": -0.59,
+            "t_stat": -0.038,
+            "p_value": 0.9701,
+            "n_with": 147,
+            "n_without": 580
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": -0.0246,
+            "mean_ret_without_signal": 0.0707,
+            "diff_bps": -9.53,
+            "t_stat": -0.64,
+            "p_value": 0.5222,
+            "n_with": 171,
+            "n_without": 556
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": 0.3277,
+            "mean_ret_without_signal": 0.0341,
+            "diff_bps": 29.36,
+            "t_stat": 0.996,
+            "p_value": 0.3197,
+            "n_with": 35,
+            "n_without": 692
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": -0.0597,
+            "mean_ret_without_signal": 0.0679,
+            "diff_bps": -12.76,
+            "t_stat": -0.73,
+            "p_value": 0.4658,
+            "n_with": 112,
+            "n_without": 615
+          }
+        }
+      },
+      "NFLX": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 499,
+            "nonzero_days": 229,
+            "zero_pct": 68.5,
+            "max_zero_streak": 15
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 608,
+            "nonzero_days": 120,
+            "zero_pct": 83.5,
+            "max_zero_streak": 25
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 575,
+            "nonzero_days": 153,
+            "zero_pct": 79.0,
+            "max_zero_streak": 25
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 563,
+            "nonzero_days": 165,
+            "zero_pct": 77.3,
+            "max_zero_streak": 29
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 668,
+            "nonzero_days": 60,
+            "zero_pct": 91.8,
+            "max_zero_streak": 54
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 602,
+            "nonzero_days": 126,
+            "zero_pct": 82.7,
+            "max_zero_streak": 25
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 681,
+            "nonzero_days": 47,
+            "zero_pct": 93.5,
+            "max_zero_streak": 87
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 119,
+            "accuracy": 0.5126,
+            "p_value": 0.4273
+          },
+          "Price Impact Potential": {
+            "n": 152,
+            "accuracy": 0.4737,
+            "p_value": 0.7672
+          },
+          "Trend Direction": {
+            "n": 164,
+            "accuracy": 0.4939,
+            "p_value": 0.5926
+          },
+          "Earnings Impact": {
+            "n": 59,
+            "accuracy": 0.5932,
+            "p_value": 0.0963
+          },
+          "Investor Confidence": {
+            "n": 126,
+            "accuracy": 0.5,
+            "p_value": 0.5355
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 119,
+            "f1": 0.368,
+            "baseline_f1": 0.2259
+          },
+          "Price Impact Potential": {
+            "n": 152,
+            "f1": 0.3263,
+            "baseline_f1": 0.2183
+          },
+          "Trend Direction": {
+            "n": 164,
+            "f1": 0.3646,
+            "baseline_f1": 0.2073
+          },
+          "Earnings Impact": {
+            "n": 59,
+            "f1": 0.4048,
+            "baseline_f1": 0.2296
+          },
+          "Investor Confidence": {
+            "n": 126,
+            "f1": 0.3651,
+            "baseline_f1": 0.2222
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": -0.0005,
+            "pearson_p": 0.988855,
+            "spearman_r": 0.0833,
+            "spearman_p": 0.024778,
+            "ic": 0.0833
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": 0.1921,
+            "pearson_p": 0.0,
+            "spearman_r": 0.1083,
+            "spearman_p": 0.00345,
+            "ic": 0.1083
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": 0.1304,
+            "pearson_p": 0.000425,
+            "spearman_r": 0.078,
+            "spearman_p": 0.035548,
+            "ic": 0.078
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": 0.0998,
+            "pearson_p": 0.007061,
+            "spearman_r": 0.0884,
+            "spearman_p": 0.017111,
+            "ic": 0.0884
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": 0.2418,
+            "pearson_p": 0.0,
+            "spearman_r": 0.1247,
+            "spearman_p": 0.000756,
+            "ic": 0.1247
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": 0.2034,
+            "pearson_p": 0.0,
+            "spearman_r": 0.1086,
+            "spearman_p": 0.00336,
+            "ic": 0.1086
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": -0.1503,
+            "pearson_p": 4.7e-05,
+            "spearman_r": -0.0355,
+            "spearman_p": 0.339209,
+            "ic": -0.0355
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": 0.1751,
+            "mean_ret_without_signal": 0.1673,
+            "diff_bps": 0.78,
+            "t_stat": 0.027,
+            "p_value": 0.9786,
+            "n_with": 119,
+            "n_without": 608
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": 0.2227,
+            "mean_ret_without_signal": 0.1542,
+            "diff_bps": 6.85,
+            "t_stat": 0.257,
+            "p_value": 0.7969,
+            "n_with": 152,
+            "n_without": 575
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": 0.0581,
+            "mean_ret_without_signal": 0.2007,
+            "diff_bps": -14.26,
+            "t_stat": -0.551,
+            "p_value": 0.5817,
+            "n_with": 164,
+            "n_without": 563
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": -0.0405,
+            "mean_ret_without_signal": 0.187,
+            "diff_bps": -22.75,
+            "t_stat": -0.574,
+            "p_value": 0.5658,
+            "n_with": 59,
+            "n_without": 668
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": 0.2275,
+            "mean_ret_without_signal": 0.1562,
+            "diff_bps": 7.13,
+            "t_stat": 0.25,
+            "p_value": 0.803,
+            "n_with": 126,
+            "n_without": 601
+          }
+        }
+      }
+    },
+    "qwen_qalora": {
+      "AAPL": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 625,
+            "nonzero_days": 103,
+            "zero_pct": 85.9,
+            "max_zero_streak": 41
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 670,
+            "nonzero_days": 58,
+            "zero_pct": 92.0,
+            "max_zero_streak": 72
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 640,
+            "nonzero_days": 88,
+            "zero_pct": 87.9,
+            "max_zero_streak": 43
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 658,
+            "nonzero_days": 70,
+            "zero_pct": 90.4,
+            "max_zero_streak": 45
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 689,
+            "nonzero_days": 39,
+            "zero_pct": 94.6,
+            "max_zero_streak": 78
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 660,
+            "nonzero_days": 68,
+            "zero_pct": 90.7,
+            "max_zero_streak": 65
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 670,
+            "nonzero_days": 58,
+            "zero_pct": 92.0,
+            "max_zero_streak": 63
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 58,
+            "accuracy": 0.3966,
+            "p_value": 0.9565
+          },
+          "Price Impact Potential": {
+            "n": 88,
+            "accuracy": 0.4091,
+            "p_value": 0.9653
+          },
+          "Trend Direction": {
+            "n": 70,
+            "accuracy": 0.4,
+            "p_value": 0.9639
+          },
+          "Earnings Impact": {
+            "n": 39,
+            "accuracy": 0.5128,
+            "p_value": 0.5
+          },
+          "Investor Confidence": {
+            "n": 68,
+            "accuracy": 0.4412,
+            "p_value": 0.8625
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 58,
+            "f1": 0.285,
+            "baseline_f1": 0.1951
+          },
+          "Price Impact Potential": {
+            "n": 88,
+            "f1": 0.3116,
+            "baseline_f1": 0.2011
+          },
+          "Trend Direction": {
+            "n": 70,
+            "f1": 0.2567,
+            "baseline_f1": 0.1953
+          },
+          "Earnings Impact": {
+            "n": 39,
+            "f1": 0.3111,
+            "baseline_f1": 0.2333
+          },
+          "Investor Confidence": {
+            "n": 68,
+            "f1": 0.2937,
+            "baseline_f1": 0.1993
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": -0.0971,
+            "pearson_p": 0.00881,
+            "spearman_r": -0.0626,
+            "spearman_p": 0.091802,
+            "ic": -0.0626
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": 0.0715,
+            "pearson_p": 0.054045,
+            "spearman_r": 0.0671,
+            "spearman_p": 0.070694,
+            "ic": 0.0671
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": 0.0621,
+            "pearson_p": 0.094498,
+            "spearman_r": 0.0491,
+            "spearman_p": 0.186304,
+            "ic": 0.0491
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": 0.0942,
+            "pearson_p": 0.011088,
+            "spearman_r": 0.0679,
+            "spearman_p": 0.067231,
+            "ic": 0.0679
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": 0.1034,
+            "pearson_p": 0.005274,
+            "spearman_r": 0.0839,
+            "spearman_p": 0.023723,
+            "ic": 0.0839
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": 0.0919,
+            "pearson_p": 0.013216,
+            "spearman_r": 0.0735,
+            "spearman_p": 0.047618,
+            "ic": 0.0735
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": -0.1213,
+            "pearson_p": 0.001047,
+            "spearman_r": -0.091,
+            "spearman_p": 0.014135,
+            "ic": -0.091
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": -0.7498,
+            "mean_ret_without_signal": 0.1256,
+            "diff_bps": -87.54,
+            "t_stat": -3.812,
+            "p_value": 0.0001,
+            "n_with": 58,
+            "n_without": 669
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": -0.4866,
+            "mean_ret_without_signal": 0.1304,
+            "diff_bps": -61.7,
+            "t_stat": -3.226,
+            "p_value": 0.0013,
+            "n_with": 88,
+            "n_without": 639
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": -0.6458,
+            "mean_ret_without_signal": 0.1305,
+            "diff_bps": -77.63,
+            "t_stat": -3.678,
+            "p_value": 0.0003,
+            "n_with": 70,
+            "n_without": 657
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": -1.0314,
+            "mean_ret_without_signal": 0.1174,
+            "diff_bps": -114.87,
+            "t_stat": -4.168,
+            "p_value": 0.0,
+            "n_with": 39,
+            "n_without": 688
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": -0.5303,
+            "mean_ret_without_signal": 0.1162,
+            "diff_bps": -64.65,
+            "t_stat": -3.014,
+            "p_value": 0.0027,
+            "n_with": 68,
+            "n_without": 659
+          }
+        }
+      },
+      "AMZN": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 618,
+            "nonzero_days": 110,
+            "zero_pct": 84.9,
+            "max_zero_streak": 33
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 683,
+            "nonzero_days": 45,
+            "zero_pct": 93.8,
+            "max_zero_streak": 61
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 649,
+            "nonzero_days": 79,
+            "zero_pct": 89.1,
+            "max_zero_streak": 44
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 656,
+            "nonzero_days": 72,
+            "zero_pct": 90.1,
+            "max_zero_streak": 52
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 701,
+            "nonzero_days": 27,
+            "zero_pct": 96.3,
+            "max_zero_streak": 83
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 676,
+            "nonzero_days": 52,
+            "zero_pct": 92.9,
+            "max_zero_streak": 64
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 692,
+            "nonzero_days": 36,
+            "zero_pct": 95.1,
+            "max_zero_streak": 81
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 45,
+            "accuracy": 0.4222,
+            "p_value": 0.8837
+          },
+          "Price Impact Potential": {
+            "n": 79,
+            "accuracy": 0.3544,
+            "p_value": 0.9967
+          },
+          "Trend Direction": {
+            "n": 72,
+            "accuracy": 0.3333,
+            "p_value": 0.9985
+          },
+          "Earnings Impact": {
+            "n": 27,
+            "accuracy": 0.4444,
+            "p_value": 0.779
+          },
+          "Investor Confidence": {
+            "n": 52,
+            "accuracy": 0.4231,
+            "p_value": 0.8942
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 45,
+            "f1": 0.2979,
+            "baseline_f1": 0.2189
+          },
+          "Price Impact Potential": {
+            "n": 79,
+            "f1": 0.2576,
+            "baseline_f1": 0.2165
+          },
+          "Trend Direction": {
+            "n": 72,
+            "f1": 0.2375,
+            "baseline_f1": 0.2095
+          },
+          "Earnings Impact": {
+            "n": 27,
+            "f1": 0.3196,
+            "baseline_f1": 0.2051
+          },
+          "Investor Confidence": {
+            "n": 52,
+            "f1": 0.2985,
+            "baseline_f1": 0.2165
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": -0.0335,
+            "pearson_p": 0.36765,
+            "spearman_r": -0.0129,
+            "spearman_p": 0.727823,
+            "ic": -0.0129
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": 0.0091,
+            "pearson_p": 0.80637,
+            "spearman_r": -0.0111,
+            "spearman_p": 0.765705,
+            "ic": -0.0111
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": 0.0025,
+            "pearson_p": 0.947215,
+            "spearman_r": -0.0297,
+            "spearman_p": 0.423457,
+            "ic": -0.0297
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": -0.0126,
+            "pearson_p": 0.734891,
+            "spearman_r": -0.0476,
+            "spearman_p": 0.200002,
+            "ic": -0.0476
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": 0.048,
+            "pearson_p": 0.196506,
+            "spearman_r": 0.0239,
+            "spearman_p": 0.519364,
+            "ic": 0.0239
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": 0.0481,
+            "pearson_p": 0.195351,
+            "spearman_r": 0.0149,
+            "spearman_p": 0.688038,
+            "ic": 0.0149
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": 0.0001,
+            "pearson_p": 0.99825,
+            "spearman_r": -0.0131,
+            "spearman_p": 0.724742,
+            "ic": -0.0131
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": -0.7212,
+            "mean_ret_without_signal": 0.1078,
+            "diff_bps": -82.89,
+            "t_stat": -2.332,
+            "p_value": 0.02,
+            "n_with": 45,
+            "n_without": 682
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": -0.305,
+            "mean_ret_without_signal": 0.1005,
+            "diff_bps": -40.56,
+            "t_stat": -1.47,
+            "p_value": 0.1419,
+            "n_with": 79,
+            "n_without": 648
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": -0.402,
+            "mean_ret_without_signal": 0.1069,
+            "diff_bps": -50.89,
+            "t_stat": -1.772,
+            "p_value": 0.0768,
+            "n_with": 72,
+            "n_without": 655
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": -0.6845,
+            "mean_ret_without_signal": 0.085,
+            "diff_bps": -76.95,
+            "t_stat": -1.696,
+            "p_value": 0.0903,
+            "n_with": 27,
+            "n_without": 700
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": -0.5061,
+            "mean_ret_without_signal": 0.0998,
+            "diff_bps": -60.59,
+            "t_stat": -1.821,
+            "p_value": 0.0691,
+            "n_with": 52,
+            "n_without": 675
+          }
+        }
+      },
+      "CRM": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 569,
+            "nonzero_days": 159,
+            "zero_pct": 78.2,
+            "max_zero_streak": 23
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 652,
+            "nonzero_days": 76,
+            "zero_pct": 89.6,
+            "max_zero_streak": 35
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 624,
+            "nonzero_days": 104,
+            "zero_pct": 85.7,
+            "max_zero_streak": 30
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 646,
+            "nonzero_days": 82,
+            "zero_pct": 88.7,
+            "max_zero_streak": 32
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 710,
+            "nonzero_days": 18,
+            "zero_pct": 97.5,
+            "max_zero_streak": 118
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 644,
+            "nonzero_days": 84,
+            "zero_pct": 88.5,
+            "max_zero_streak": 40
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 708,
+            "nonzero_days": 20,
+            "zero_pct": 97.3,
+            "max_zero_streak": 218
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 76,
+            "accuracy": 0.4605,
+            "p_value": 0.7889
+          },
+          "Price Impact Potential": {
+            "n": 104,
+            "accuracy": 0.3846,
+            "p_value": 0.9931
+          },
+          "Trend Direction": {
+            "n": 82,
+            "accuracy": 0.4512,
+            "p_value": 0.8399
+          },
+          "Earnings Impact": {
+            "n": 18,
+            "accuracy": 0.4444,
+            "p_value": 0.7597
+          },
+          "Investor Confidence": {
+            "n": 84,
+            "accuracy": 0.4762,
+            "p_value": 0.7072
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 76,
+            "f1": 0.3457,
+            "baseline_f1": 0.1887
+          },
+          "Price Impact Potential": {
+            "n": 104,
+            "f1": 0.2855,
+            "baseline_f1": 0.1918
+          },
+          "Trend Direction": {
+            "n": 82,
+            "f1": 0.3352,
+            "baseline_f1": 0.1954
+          },
+          "Earnings Impact": {
+            "n": 18,
+            "f1": 0.3211,
+            "baseline_f1": 0.2381
+          },
+          "Investor Confidence": {
+            "n": 84,
+            "f1": 0.3561,
+            "baseline_f1": 0.1921
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": -0.0151,
+            "pearson_p": 0.684766,
+            "spearman_r": 0.0091,
+            "spearman_p": 0.805643,
+            "ic": 0.0091
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": 0.0766,
+            "pearson_p": 0.038877,
+            "spearman_r": 0.0633,
+            "spearman_p": 0.08825,
+            "ic": 0.0633
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": 0.0209,
+            "pearson_p": 0.574487,
+            "spearman_r": 0.0162,
+            "spearman_p": 0.662212,
+            "ic": 0.0162
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": 0.0987,
+            "pearson_p": 0.007767,
+            "spearman_r": 0.0595,
+            "spearman_p": 0.1088,
+            "ic": 0.0595
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": 0.0277,
+            "pearson_p": 0.455597,
+            "spearman_r": 0.0182,
+            "spearman_p": 0.624626,
+            "ic": 0.0182
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": 0.1148,
+            "pearson_p": 0.001933,
+            "spearman_r": 0.0806,
+            "spearman_p": 0.029716,
+            "ic": 0.0806
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": -0.0808,
+            "pearson_p": 0.029463,
+            "spearman_r": -0.0381,
+            "spearman_p": 0.305336,
+            "ic": -0.0381
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": 0.0354,
+            "mean_ret_without_signal": 0.0735,
+            "diff_bps": -3.81,
+            "t_stat": -0.134,
+            "p_value": 0.8934,
+            "n_with": 76,
+            "n_without": 651
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": -0.039,
+            "mean_ret_without_signal": 0.0876,
+            "diff_bps": -12.66,
+            "t_stat": -0.509,
+            "p_value": 0.6106,
+            "n_with": 104,
+            "n_without": 623
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": 0.1368,
+            "mean_ret_without_signal": 0.0609,
+            "diff_bps": 7.59,
+            "t_stat": 0.276,
+            "p_value": 0.7827,
+            "n_with": 82,
+            "n_without": 645
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": -0.474,
+            "mean_ret_without_signal": 0.0833,
+            "diff_bps": -55.72,
+            "t_stat": -0.996,
+            "p_value": 0.3196,
+            "n_with": 18,
+            "n_without": 709
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": 0.0533,
+            "mean_ret_without_signal": 0.0716,
+            "diff_bps": -1.83,
+            "t_stat": -0.067,
+            "p_value": 0.9465,
+            "n_with": 84,
+            "n_without": 643
+          }
+        }
+      },
+      "MSFT": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 616,
+            "nonzero_days": 112,
+            "zero_pct": 84.6,
+            "max_zero_streak": 25
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 672,
+            "nonzero_days": 56,
+            "zero_pct": 92.3,
+            "max_zero_streak": 38
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 638,
+            "nonzero_days": 90,
+            "zero_pct": 87.6,
+            "max_zero_streak": 30
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 641,
+            "nonzero_days": 87,
+            "zero_pct": 88.0,
+            "max_zero_streak": 32
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 695,
+            "nonzero_days": 33,
+            "zero_pct": 95.5,
+            "max_zero_streak": 58
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 658,
+            "nonzero_days": 70,
+            "zero_pct": 90.4,
+            "max_zero_streak": 30
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 687,
+            "nonzero_days": 41,
+            "zero_pct": 94.4,
+            "max_zero_streak": 47
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 56,
+            "accuracy": 0.4107,
+            "p_value": 0.9296
+          },
+          "Price Impact Potential": {
+            "n": 90,
+            "accuracy": 0.3778,
+            "p_value": 0.9926
+          },
+          "Trend Direction": {
+            "n": 87,
+            "accuracy": 0.3908,
+            "p_value": 0.9843
+          },
+          "Earnings Impact": {
+            "n": 33,
+            "accuracy": 0.3636,
+            "p_value": 0.9599
+          },
+          "Investor Confidence": {
+            "n": 70,
+            "accuracy": 0.4,
+            "p_value": 0.9639
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 56,
+            "f1": 0.3157,
+            "baseline_f1": 0.1818
+          },
+          "Price Impact Potential": {
+            "n": 90,
+            "f1": 0.2771,
+            "baseline_f1": 0.2016
+          },
+          "Trend Direction": {
+            "n": 87,
+            "f1": 0.2961,
+            "baseline_f1": 0.2027
+          },
+          "Earnings Impact": {
+            "n": 33,
+            "f1": 0.2692,
+            "baseline_f1": 0.2083
+          },
+          "Investor Confidence": {
+            "n": 70,
+            "f1": 0.3001,
+            "baseline_f1": 0.1856
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": 0.0219,
+            "pearson_p": 0.555986,
+            "spearman_r": 0.0252,
+            "spearman_p": 0.49804,
+            "ic": 0.0252
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": 0.0634,
+            "pearson_p": 0.087453,
+            "spearman_r": 0.0447,
+            "spearman_p": 0.229157,
+            "ic": 0.0447
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": 0.0057,
+            "pearson_p": 0.877857,
+            "spearman_r": -0.0026,
+            "spearman_p": 0.944942,
+            "ic": -0.0026
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": 0.0481,
+            "pearson_p": 0.19497,
+            "spearman_r": 0.0343,
+            "spearman_p": 0.355473,
+            "ic": 0.0343
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": 0.0119,
+            "pearson_p": 0.749449,
+            "spearman_r": 0.0034,
+            "spearman_p": 0.927394,
+            "ic": 0.0034
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": 0.062,
+            "pearson_p": 0.094837,
+            "spearman_r": 0.0375,
+            "spearman_p": 0.312595,
+            "ic": 0.0375
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": -0.0002,
+            "pearson_p": 0.996609,
+            "spearman_r": 0.0002,
+            "spearman_p": 0.994736,
+            "ic": 0.0002
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": 0.0554,
+            "mean_ret_without_signal": 0.0477,
+            "diff_bps": 0.78,
+            "t_stat": 0.033,
+            "p_value": 0.9739,
+            "n_with": 56,
+            "n_without": 671
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": 0.0316,
+            "mean_ret_without_signal": 0.0506,
+            "diff_bps": -1.9,
+            "t_stat": -0.099,
+            "p_value": 0.9209,
+            "n_with": 90,
+            "n_without": 637
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": 0.007,
+            "mean_ret_without_signal": 0.0539,
+            "diff_bps": -4.69,
+            "t_stat": -0.241,
+            "p_value": 0.8096,
+            "n_with": 87,
+            "n_without": 640
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": 0.1484,
+            "mean_ret_without_signal": 0.0435,
+            "diff_bps": 10.49,
+            "t_stat": 0.346,
+            "p_value": 0.7296,
+            "n_with": 33,
+            "n_without": 694
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": -0.0767,
+            "mean_ret_without_signal": 0.0616,
+            "diff_bps": -13.82,
+            "t_stat": -0.646,
+            "p_value": 0.5186,
+            "n_with": 70,
+            "n_without": 657
+          }
+        }
+      },
+      "NFLX": {
+        "zero_fill": {
+          "News Relevance": {
+            "total_days": 728,
+            "zero_days": 616,
+            "nonzero_days": 112,
+            "zero_pct": 84.6,
+            "max_zero_streak": 26
+          },
+          "Sentiment": {
+            "total_days": 728,
+            "zero_days": 679,
+            "nonzero_days": 49,
+            "zero_pct": 93.3,
+            "max_zero_streak": 69
+          },
+          "Price Impact Potential": {
+            "total_days": 728,
+            "zero_days": 656,
+            "nonzero_days": 72,
+            "zero_pct": 90.1,
+            "max_zero_streak": 45
+          },
+          "Trend Direction": {
+            "total_days": 728,
+            "zero_days": 668,
+            "nonzero_days": 60,
+            "zero_pct": 91.8,
+            "max_zero_streak": 45
+          },
+          "Earnings Impact": {
+            "total_days": 728,
+            "zero_days": 708,
+            "nonzero_days": 20,
+            "zero_pct": 97.3,
+            "max_zero_streak": 155
+          },
+          "Investor Confidence": {
+            "total_days": 728,
+            "zero_days": 666,
+            "nonzero_days": 62,
+            "zero_pct": 91.5,
+            "max_zero_streak": 45
+          },
+          "Risk Profile Change": {
+            "total_days": 728,
+            "zero_days": 708,
+            "nonzero_days": 20,
+            "zero_pct": 97.3,
+            "max_zero_streak": 169
+          }
+        },
+        "directional_accuracy": {
+          "Sentiment": {
+            "n": 48,
+            "accuracy": 0.3333,
+            "p_value": 0.9934
+          },
+          "Price Impact Potential": {
+            "n": 71,
+            "accuracy": 0.3662,
+            "p_value": 0.9915
+          },
+          "Trend Direction": {
+            "n": 59,
+            "accuracy": 0.3729,
+            "p_value": 0.9818
+          },
+          "Earnings Impact": {
+            "n": 19,
+            "accuracy": 0.3158,
+            "p_value": 0.9682
+          },
+          "Investor Confidence": {
+            "n": 61,
+            "accuracy": 0.377,
+            "p_value": 0.9802
+          }
+        },
+        "macro_f1": {
+          "Sentiment": {
+            "n": 48,
+            "f1": 0.2394,
+            "baseline_f1": 0.2029
+          },
+          "Price Impact Potential": {
+            "n": 71,
+            "f1": 0.265,
+            "baseline_f1": 0.2115
+          },
+          "Trend Direction": {
+            "n": 59,
+            "f1": 0.268,
+            "baseline_f1": 0.1984
+          },
+          "Earnings Impact": {
+            "n": 19,
+            "f1": 0.2118,
+            "baseline_f1": 0.2299
+          },
+          "Investor Confidence": {
+            "n": 61,
+            "f1": 0.2659,
+            "baseline_f1": 0.2045
+          }
+        },
+        "correlation": {
+          "News Relevance": {
+            "n": 727,
+            "pearson_r": 0.0275,
+            "pearson_p": 0.459075,
+            "spearman_r": 0.0099,
+            "spearman_p": 0.79029,
+            "ic": 0.0099
+          },
+          "Sentiment": {
+            "n": 727,
+            "pearson_r": -0.0125,
+            "pearson_p": 0.737389,
+            "spearman_r": -0.0329,
+            "spearman_p": 0.375043,
+            "ic": -0.0329
+          },
+          "Price Impact Potential": {
+            "n": 727,
+            "pearson_r": -0.0129,
+            "pearson_p": 0.728126,
+            "spearman_r": -0.0354,
+            "spearman_p": 0.340212,
+            "ic": -0.0354
+          },
+          "Trend Direction": {
+            "n": 727,
+            "pearson_r": -0.044,
+            "pearson_p": 0.23555,
+            "spearman_r": -0.0412,
+            "spearman_p": 0.267576,
+            "ic": -0.0412
+          },
+          "Earnings Impact": {
+            "n": 727,
+            "pearson_r": 0.0082,
+            "pearson_p": 0.825936,
+            "spearman_r": -0.0487,
+            "spearman_p": 0.189497,
+            "ic": -0.0487
+          },
+          "Investor Confidence": {
+            "n": 727,
+            "pearson_r": -0.0226,
+            "pearson_p": 0.542948,
+            "spearman_r": -0.0262,
+            "spearman_p": 0.480111,
+            "ic": -0.0262
+          },
+          "Risk Profile Change": {
+            "n": 727,
+            "pearson_r": 0.0464,
+            "pearson_p": 0.211229,
+            "spearman_r": 0.0233,
+            "spearman_p": 0.531331,
+            "ic": 0.0233
+          }
+        },
+        "signal_vs_nosignal": {
+          "Sentiment": {
+            "mean_ret_with_signal": 0.3719,
+            "mean_ret_without_signal": 0.1542,
+            "diff_bps": 21.77,
+            "t_stat": 0.5,
+            "p_value": 0.6172,
+            "n_with": 48,
+            "n_without": 679
+          },
+          "Price Impact Potential": {
+            "mean_ret_with_signal": 0.1315,
+            "mean_ret_without_signal": 0.1726,
+            "diff_bps": -4.1,
+            "t_stat": -0.113,
+            "p_value": 0.9104,
+            "n_with": 71,
+            "n_without": 656
+          },
+          "Trend Direction": {
+            "mean_ret_with_signal": 0.346,
+            "mean_ret_without_signal": 0.1529,
+            "diff_bps": 19.31,
+            "t_stat": 0.488,
+            "p_value": 0.6259,
+            "n_with": 59,
+            "n_without": 668
+          },
+          "Earnings Impact": {
+            "mean_ret_with_signal": 1.2117,
+            "mean_ret_without_signal": 0.1406,
+            "diff_bps": 107.11,
+            "t_stat": 1.583,
+            "p_value": 0.1139,
+            "n_with": 19,
+            "n_without": 708
+          },
+          "Investor Confidence": {
+            "mean_ret_with_signal": 0.4888,
+            "mean_ret_without_signal": 0.1392,
+            "diff_bps": 34.96,
+            "t_stat": 0.897,
+            "p_value": 0.3701,
+            "n_with": 61,
+            "n_without": 666
+          }
+        }
+      }
+    }
+  },
+  "cross_llm_agreement": {
+    "AAPL": {
+      "News Relevance": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.4077,
+            "p": 0.0,
+            "n": 434
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": -0.0198,
+            "p": 0.766897,
+            "n": 227
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.1437,
+            "p": 0.147678,
+            "n": 103
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.0484,
+            "p": 0.573016,
+            "n": 138
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.0946,
+            "p": 0.439469,
+            "n": 69
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.1159,
+            "p": 0.507399,
+            "n": 35
+          }
+        },
+        "direction_agreement_pct": 1.0,
+        "n_all_nonzero": 18
+      },
+      "Sentiment": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 1.0,
+            "p": 0.0,
+            "n": 117
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.8031,
+            "p": 0.0,
+            "n": 87
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.6879,
+            "p": 0.0,
+            "n": 47
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.9329,
+            "p": 0.0,
+            "n": 28
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.8179,
+            "p": 6e-06,
+            "n": 21
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.8717,
+            "p": 2.3e-05,
+            "n": 15
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 6
+      },
+      "Price Impact Potential": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8399,
+            "p": 0.0,
+            "n": 331
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.5168,
+            "p": 0.0,
+            "n": 158
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.4274,
+            "p": 9.5e-05,
+            "n": 78
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.5545,
+            "p": 0.0,
+            "n": 97
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.4651,
+            "p": 0.000346,
+            "n": 55
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.5671,
+            "p": 0.002037,
+            "n": 27
+          }
+        },
+        "direction_agreement_pct": 0.5,
+        "n_all_nonzero": 12
+      },
+      "Trend Direction": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8864,
+            "p": 0.0,
+            "n": 283
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.8439,
+            "p": 0.0,
+            "n": 151
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.7329,
+            "p": 0.0,
+            "n": 57
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.9345,
+            "p": 0.0,
+            "n": 95
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.9208,
+            "p": 0.0,
+            "n": 41
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.9814,
+            "p": 0.0,
+            "n": 23
+          }
+        },
+        "direction_agreement_pct": 0.9231,
+        "n_all_nonzero": 13
+      },
+      "Earnings Impact": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8435,
+            "p": 0.0,
+            "n": 221
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.854,
+            "p": 0.0,
+            "n": 45
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.6081,
+            "p": 0.000364,
+            "n": 30
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.8576,
+            "p": 0.0,
+            "n": 26
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.9435,
+            "p": 0.0,
+            "n": 22
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 7
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 1
+      },
+      "Investor Confidence": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8506,
+            "p": 0.0,
+            "n": 314
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.7358,
+            "p": 0.0,
+            "n": 106
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.6444,
+            "p": 0.0,
+            "n": 62
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.8719,
+            "p": 0.0,
+            "n": 71
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.8766,
+            "p": 0.0,
+            "n": 44
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.8225,
+            "p": 9.2e-05,
+            "n": 16
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 8
+      },
+      "Risk Profile Change": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": -0.2301,
+            "p": 0.00213,
+            "n": 176
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": -0.0305,
+            "p": 0.838974,
+            "n": 47
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": -0.1511,
+            "p": 0.316309,
+            "n": 46
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": -0.4017,
+            "p": 0.013735,
+            "n": 37
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": -0.0286,
+            "p": 0.872273,
+            "n": 34
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 10
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 5
+      }
+    },
+    "AMZN": {
+      "News Relevance": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.4365,
+            "p": 0.0,
+            "n": 425
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.0578,
+            "p": 0.444874,
+            "n": 177
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.2135,
+            "p": 0.027252,
+            "n": 107
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": -0.0225,
+            "p": 0.805162,
+            "n": 123
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.1305,
+            "p": 0.311934,
+            "n": 62
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.7234,
+            "p": 4.4e-05,
+            "n": 25
+          }
+        },
+        "direction_agreement_pct": 1.0,
+        "n_all_nonzero": 14
+      },
+      "Sentiment": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.9566,
+            "p": 0.0,
+            "n": 129
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.6742,
+            "p": 0.0,
+            "n": 66
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.6995,
+            "p": 3e-06,
+            "n": 35
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.8993,
+            "p": 0.0,
+            "n": 26
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.9387,
+            "p": 2e-06,
+            "n": 13
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 4
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 2
+      },
+      "Price Impact Potential": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.7306,
+            "p": 0.0,
+            "n": 336
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.3519,
+            "p": 7e-05,
+            "n": 122
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.4273,
+            "p": 0.000202,
+            "n": 71
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.4924,
+            "p": 3e-06,
+            "n": 81
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.5656,
+            "p": 0.000143,
+            "n": 40
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.7961,
+            "p": 0.003373,
+            "n": 11
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 7
+      },
+      "Trend Direction": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.7773,
+            "p": 0.0,
+            "n": 289
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.8098,
+            "p": 0.0,
+            "n": 149
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.7283,
+            "p": 0.0,
+            "n": 63
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.8603,
+            "p": 0.0,
+            "n": 121
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.8215,
+            "p": 0.0,
+            "n": 41
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 1.0,
+            "p": 0.0,
+            "n": 24
+          }
+        },
+        "direction_agreement_pct": 0.9375,
+        "n_all_nonzero": 16
+      },
+      "Earnings Impact": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.7789,
+            "p": 0.0,
+            "n": 217
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.7205,
+            "p": 2e-06,
+            "n": 34
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.4263,
+            "p": 0.042518,
+            "n": 23
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.7673,
+            "p": 1.2e-05,
+            "n": 24
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.6241,
+            "p": 0.012902,
+            "n": 15
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 4
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 2
+      },
+      "Investor Confidence": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.763,
+            "p": 0.0,
+            "n": 323
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.7337,
+            "p": 0.0,
+            "n": 87
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.6155,
+            "p": 1.1e-05,
+            "n": 43
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.7795,
+            "p": 0.0,
+            "n": 63
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.8567,
+            "p": 0.0,
+            "n": 26
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 8
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 5
+      },
+      "Risk Profile Change": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": -0.0899,
+            "p": 0.354828,
+            "n": 108
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 33
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": -0.0629,
+            "p": 0.770407,
+            "n": 24
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.0682,
+            "p": 0.730177,
+            "n": 28
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.3299,
+            "p": 0.181286,
+            "n": 18
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 5
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 2
+      }
+    },
+    "CRM": {
+      "News Relevance": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.3558,
+            "p": 0.0,
+            "n": 396
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.0838,
+            "p": 0.173878,
+            "n": 265
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.0124,
+            "p": 0.880111,
+            "n": 150
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.0987,
+            "p": 0.191356,
+            "n": 177
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.172,
+            "p": 0.07377,
+            "n": 109
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.0599,
+            "p": 0.609569,
+            "n": 75
+          }
+        },
+        "direction_agreement_pct": 1.0,
+        "n_all_nonzero": 49
+      },
+      "Sentiment": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 1.0,
+            "p": 0.0,
+            "n": 127
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.9028,
+            "p": 0.0,
+            "n": 108
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.8257,
+            "p": 0.0,
+            "n": 63
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.9842,
+            "p": 0.0,
+            "n": 35
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.8908,
+            "p": 0.0,
+            "n": 20
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.9027,
+            "p": 0.0,
+            "n": 23
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 5
+      },
+      "Price Impact Potential": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8486,
+            "p": 0.0,
+            "n": 300
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.6952,
+            "p": 0.0,
+            "n": 130
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.5859,
+            "p": 0.0,
+            "n": 82
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.6747,
+            "p": 0.0,
+            "n": 91
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.682,
+            "p": 0.0,
+            "n": 63
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.637,
+            "p": 0.000116,
+            "n": 31
+          }
+        },
+        "direction_agreement_pct": 0.7368,
+        "n_all_nonzero": 19
+      },
+      "Trend Direction": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8911,
+            "p": 0.0,
+            "n": 281
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.8898,
+            "p": 0.0,
+            "n": 141
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.8768,
+            "p": 0.0,
+            "n": 66
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.8839,
+            "p": 0.0,
+            "n": 103
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.9132,
+            "p": 0.0,
+            "n": 52
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.9349,
+            "p": 0.0,
+            "n": 30
+          }
+        },
+        "direction_agreement_pct": 0.8824,
+        "n_all_nonzero": 17
+      },
+      "Earnings Impact": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.9285,
+            "p": 0.0,
+            "n": 106
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.83,
+            "p": 0.0,
+            "n": 25
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.9398,
+            "p": 6e-06,
+            "n": 12
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.6596,
+            "p": 0.002898,
+            "n": 18
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.9366,
+            "p": 7e-06,
+            "n": 12
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 3
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 1
+      },
+      "Investor Confidence": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8416,
+            "p": 0.0,
+            "n": 290
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.8171,
+            "p": 0.0,
+            "n": 114
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.8511,
+            "p": 0.0,
+            "n": 67
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.8625,
+            "p": 0.0,
+            "n": 83
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.8501,
+            "p": 0.0,
+            "n": 53
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.8583,
+            "p": 0.0,
+            "n": 26
+          }
+        },
+        "direction_agreement_pct": 0.9333,
+        "n_all_nonzero": 15
+      },
+      "Risk Profile Change": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": -0.0999,
+            "p": 0.48544,
+            "n": 51
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": -0.6481,
+            "p": 0.002689,
+            "n": 19
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 15
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 16
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.2809,
+            "p": 0.402746,
+            "n": 11
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 8
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 5
+      }
+    },
+    "MSFT": {
+      "News Relevance": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.3856,
+            "p": 0.0,
+            "n": 430
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.1366,
+            "p": 0.042979,
+            "n": 220
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.0359,
+            "p": 0.714899,
+            "n": 106
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": -0.0379,
+            "p": 0.64519,
+            "n": 150
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": -0.1548,
+            "p": 0.184728,
+            "n": 75
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.3983,
+            "p": 0.017804,
+            "n": 35
+          }
+        },
+        "direction_agreement_pct": 1.0,
+        "n_all_nonzero": 21
+      },
+      "Sentiment": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.912,
+            "p": 0.0,
+            "n": 119
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.8494,
+            "p": 0.0,
+            "n": 71
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.7385,
+            "p": 0.0,
+            "n": 44
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.9724,
+            "p": 0.0,
+            "n": 22
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.9589,
+            "p": 0.0,
+            "n": 17
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 10
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 2
+      },
+      "Price Impact Potential": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8436,
+            "p": 0.0,
+            "n": 321
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.4913,
+            "p": 0.0,
+            "n": 132
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.5023,
+            "p": 4e-06,
+            "n": 76
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.5995,
+            "p": 0.0,
+            "n": 85
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.5139,
+            "p": 3.7e-05,
+            "n": 58
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.192,
+            "p": 0.417413,
+            "n": 20
+          }
+        },
+        "direction_agreement_pct": 0.5455,
+        "n_all_nonzero": 11
+      },
+      "Trend Direction": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8916,
+            "p": 0.0,
+            "n": 270
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.8599,
+            "p": 0.0,
+            "n": 147
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.8524,
+            "p": 0.0,
+            "n": 74
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.9527,
+            "p": 0.0,
+            "n": 99
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.9115,
+            "p": 0.0,
+            "n": 44
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.9461,
+            "p": 0.0,
+            "n": 27
+          }
+        },
+        "direction_agreement_pct": 1.0,
+        "n_all_nonzero": 16
+      },
+      "Earnings Impact": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8643,
+            "p": 0.0,
+            "n": 179
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.8568,
+            "p": 0.0,
+            "n": 25
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.4938,
+            "p": 0.026898,
+            "n": 20
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.9435,
+            "p": 0.0,
+            "n": 19
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.9586,
+            "p": 0.0,
+            "n": 16
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 4
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 2
+      },
+      "Investor Confidence": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8396,
+            "p": 0.0,
+            "n": 306
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.6939,
+            "p": 0.0,
+            "n": 101
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.751,
+            "p": 0.0,
+            "n": 59
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.8101,
+            "p": 0.0,
+            "n": 68
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.79,
+            "p": 0.0,
+            "n": 47
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.9365,
+            "p": 0.0,
+            "n": 15
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 10
+      },
+      "Risk Profile Change": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.0492,
+            "p": 0.581571,
+            "n": 128
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": -0.2103,
+            "p": 0.192851,
+            "n": 40
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": -0.03,
+            "p": 0.872614,
+            "n": 31
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.0774,
+            "p": 0.719096,
+            "n": 24
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.0588,
+            "p": 0.816654,
+            "n": 18
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 10
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 3
+      }
+    },
+    "NFLX": {
+      "News Relevance": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.4658,
+            "p": 0.0,
+            "n": 410
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.1346,
+            "p": 0.046696,
+            "n": 219
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.1622,
+            "p": 0.09988,
+            "n": 104
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.0547,
+            "p": 0.534937,
+            "n": 131
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.1656,
+            "p": 0.198225,
+            "n": 62
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.3329,
+            "p": 0.022241,
+            "n": 47
+          }
+        },
+        "direction_agreement_pct": 1.0,
+        "n_all_nonzero": 25
+      },
+      "Sentiment": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.9749,
+            "p": 0.0,
+            "n": 144
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.8161,
+            "p": 0.0,
+            "n": 97
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.8898,
+            "p": 0.0,
+            "n": 40
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.8558,
+            "p": 0.0,
+            "n": 37
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 10
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.898,
+            "p": 7.3e-05,
+            "n": 12
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 1
+      },
+      "Price Impact Potential": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8597,
+            "p": 0.0,
+            "n": 328
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.5337,
+            "p": 0.0,
+            "n": 138
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.6934,
+            "p": 0.0,
+            "n": 62
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.5618,
+            "p": 0.0,
+            "n": 79
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.6696,
+            "p": 1.1e-05,
+            "n": 35
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.5124,
+            "p": 0.014758,
+            "n": 22
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 8
+      },
+      "Trend Direction": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8797,
+            "p": 0.0,
+            "n": 291
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.8051,
+            "p": 0.0,
+            "n": 142
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.883,
+            "p": 0.0,
+            "n": 50
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.9202,
+            "p": 0.0,
+            "n": 80
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.941,
+            "p": 0.0,
+            "n": 33
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.869,
+            "p": 1e-06,
+            "n": 19
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 9
+      },
+      "Earnings Impact": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8867,
+            "p": 0.0,
+            "n": 203
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.8123,
+            "p": 0.0,
+            "n": 45
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.9024,
+            "p": 0.0,
+            "n": 18
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.818,
+            "p": 0.0,
+            "n": 29
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 8
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 5
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 3
+      },
+      "Investor Confidence": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.8429,
+            "p": 0.0,
+            "n": 307
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": 0.7701,
+            "p": 0.0,
+            "n": 110
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": 0.8622,
+            "p": 0.0,
+            "n": 50
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": 0.8786,
+            "p": 0.0,
+            "n": 65
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": 0.8481,
+            "p": 0.0,
+            "n": 30
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": 0.605,
+            "p": 0.010087,
+            "n": 17
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 5
+      },
+      "Risk Profile Change": {
+        "pairwise_correlation": {
+          "gemini_vs_qwen_base": {
+            "r": 0.1901,
+            "p": 0.087143,
+            "n": 82
+          },
+          "gemini_vs_qwen_qlora": {
+            "r": -0.3727,
+            "p": 0.038946,
+            "n": 31
+          },
+          "gemini_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 12
+          },
+          "qwen_base_vs_qwen_qlora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 19
+          },
+          "qwen_base_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 10
+          },
+          "qwen_qlora_vs_qwen_qalora": {
+            "r": NaN,
+            "p": NaN,
+            "n": 8
+          }
+        },
+        "direction_agreement_pct": NaN,
+        "n_all_nonzero": 3
+      }
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "experiment": "ablation_v8",
+  "description": "NLP-only vs Full vs Tech-only ablation study",
+  "total_runs": {
+    "full": 597,
+    "tech_only": 148,
+    "nlp_only": 600
+  },
+  "active_rates": {
+    "gemini": {
+      "full": {
+        "active": 109,
+        "total": 150,
+        "rate": 72.66666666666667
+      },
+      "nlp_only": {
+        "active": 145,
+        "total": 150,
+        "rate": 96.66666666666667
+      }
+    },
+    "qwen_base": {
+      "full": {
+        "active": 103,
+        "total": 148,
+        "rate": 69.5945945945946
+      },
+      "nlp_only": {
+        "active": 145,
+        "total": 150,
+        "rate": 96.66666666666667
+      }
+    },
+    "qwen_qlora": {
+      "full": {
+        "active": 107,
+        "total": 149,
+        "rate": 71.81208053691275
+      },
+      "nlp_only": {
+        "active": 148,
+        "total": 150,
+        "rate": 98.66666666666667
+      }
+    },
+    "qwen_qalora": {
+      "full": {
+        "active": 106,
+        "total": 150,
+        "rate": 70.66666666666667
+      },
+      "nlp_only": {
+        "active": 146,
+        "total": 150,
+        "rate": 97.33333333333334
+      }
+    },
+    "tech_only": {
+      "active": 103,
+      "total": 148,
+      "rate": 69.5945945945946
+    }
+  },
+  "paired_tests": {
+    "all": {
+      "gemini": {
+        "n_paired": 98,
+        "full_avg": 26.77102882642619,
+        "tech_avg": 25.8346022114595,
+        "nlp_avg": 28.03406642958112,
+        "nlp_vs_tech": {
+          "diff_pp": 2.199464218121625,
+          "t": 3.440767221945293,
+          "p": 0.0008570560510565824,
+          "significant": "True"
+        },
+        "nlp_vs_full": {
+          "diff_pp": 1.263037603154941,
+          "t": 2.4866746044323547,
+          "p": 0.014602606961123666,
+          "significant": "True"
+        },
+        "full_vs_tech": {
+          "diff_pp": 0.9364266149666839,
+          "t": 2.164042573682085,
+          "p": 0.03291638064419826,
+          "significant": "True"
+        }
+      },
+      "qwen_base": {
+        "n_paired": 94,
+        "full_avg": 27.634186520451085,
+        "tech_avg": 26.573392616630322,
+        "nlp_avg": 28.41646829599881,
+        "nlp_vs_tech": {
+          "diff_pp": 1.8430756793684844,
+          "t": 2.8427936543579215,
+          "p": 0.005497098366340514,
+          "significant": "True"
+        },
+        "nlp_vs_full": {
+          "diff_pp": 0.7822817755477173,
+          "t": 1.5004113534131467,
+          "p": 0.13689529691125965,
+          "significant": "False"
+        },
+        "full_vs_tech": {
+          "diff_pp": 1.060793903820767,
+          "t": 1.9177063204196207,
+          "p": 0.05821682004573902,
+          "significant": "False"
+        }
+      },
+      "qwen_qlora": {
+        "n_paired": 99,
+        "full_avg": 26.11392899349036,
+        "tech_avg": 25.37996313790224,
+        "nlp_avg": 27.29151091942204,
+        "nlp_vs_tech": {
+          "diff_pp": 1.9115477815198016,
+          "t": 2.4324256401187134,
+          "p": 0.016812215860513218,
+          "significant": "True"
+        },
+        "nlp_vs_full": {
+          "diff_pp": 1.1775819259316789,
+          "t": 1.5858151431464298,
+          "p": 0.11600286163973893,
+          "significant": "False"
+        },
+        "full_vs_tech": {
+          "diff_pp": 0.733965855588123,
+          "t": 2.5858814686275244,
+          "p": 0.011184327549879374,
+          "significant": "True"
+        }
+      },
+      "qwen_qalora": {
+        "n_paired": 96,
+        "full_avg": 26.068860800585043,
+        "tech_avg": 26.031863317819212,
+        "nlp_avg": 27.57305047869433,
+        "nlp_vs_tech": {
+          "diff_pp": 1.5411871608751195,
+          "t": 1.9716076588596116,
+          "p": 0.05156332517255983,
+          "significant": "False"
+        },
+        "nlp_vs_full": {
+          "diff_pp": 1.5041896781092874,
+          "t": 1.9303200925920858,
+          "p": 0.05654962717101899,
+          "significant": "False"
+        },
+        "full_vs_tech": {
+          "diff_pp": 0.03699748276583254,
+          "t": 0.14026178401115355,
+          "p": 0.8887501176257168,
+          "significant": "False"
+        }
+      }
+    },
+    "excl_NFLX": {
+      "gemini": {
+        "n_paired": 72,
+        "full_avg": 15.046600014666675,
+        "tech_avg": 14.56132424948418,
+        "nlp_avg": 16.611407375553355,
+        "nlp_vs_tech": {
+          "diff_pp": 2.0500831260691745,
+          "t": 3.1672946956174766,
+          "p": 0.002268727157825637,
+          "significant": "True"
+        },
+        "nlp_vs_full": {
+          "diff_pp": 1.5648073608866797,
+          "t": 2.625955738918053,
+          "p": 0.010576165099742114,
+          "significant": "True"
+        },
+        "full_vs_tech": {
+          "diff_pp": 0.4852757651824946,
+          "t": 1.2281532942240456,
+          "p": 0.22344525167823673,
+          "significant": "False"
+        }
+      },
+      "qwen_base": {
+        "n_paired": 68,
+        "full_avg": 15.81357452991105,
+        "tech_avg": 14.919459341221767,
+        "nlp_avg": 16.318524893107927,
+        "nlp_vs_tech": {
+          "diff_pp": 1.399065551886165,
+          "t": 1.985056238620449,
+          "p": 0.05123436225905344,
+          "significant": "False"
+        },
+        "nlp_vs_full": {
+          "diff_pp": 0.5049503631968785,
+          "t": 0.7847397464735174,
+          "p": 0.4353721429897295,
+          "significant": "False"
+        },
+        "full_vs_tech": {
+          "diff_pp": 0.8941151886892866,
+          "t": 1.5582316057676289,
+          "p": 0.1238897600806464,
+          "significant": "False"
+        }
+      },
+      "qwen_qlora": {
+        "n_paired": 73,
+        "full_avg": 14.811365050572862,
+        "tech_avg": 14.0991873957829,
+        "nlp_avg": 16.143377792432197,
+        "nlp_vs_tech": {
+          "diff_pp": 2.0441903966492943,
+          "t": 2.8147719468948695,
+          "p": 0.0062909724439958415,
+          "significant": "True"
+        },
+        "nlp_vs_full": {
+          "diff_pp": 1.3320127418593304,
+          "t": 1.8206110182272777,
+          "p": 0.07282142975076182,
+          "significant": "False"
+        },
+        "full_vs_tech": {
+          "diff_pp": 0.7121776547899642,
+          "t": 2.1184816737521746,
+          "p": 0.0375858020903072,
+          "significant": "True"
+        }
+      },
+      "qwen_qalora": {
+        "n_paired": 70,
+        "full_avg": 14.563910295875123,
+        "tech_avg": 14.509760110721055,
+        "nlp_avg": 16.281534370850274,
+        "nlp_vs_tech": {
+          "diff_pp": 1.7717742601292186,
+          "t": 3.1336171694511528,
+          "p": 0.0025349104099786396,
+          "significant": "True"
+        },
+        "nlp_vs_full": {
+          "diff_pp": 1.7176240749751481,
+          "t": 3.2160995877156338,
+          "p": 0.0019789341123799724,
+          "significant": "True"
+        },
+        "full_vs_tech": {
+          "diff_pp": 0.05415018515407002,
+          "t": 0.1897640590510655,
+          "p": 0.8500511650892314,
+          "significant": "False"
+        }
+      }
+    }
+  },
+  "per_config_per_ticker": {},
+  "per_config_aggregate": {},
+  "trade_behavior": {},
+  "key_findings": [
+    "NLP-only significantly outperforms Tech-only: overall t=5.51, p<0.0001 (excl NFLX)",
+    "NLP-only significantly outperforms Full: overall t=4.08, p=0.0001 (excl NFLX)",
+    "Full significantly outperforms Tech-only: overall t=2.63, p=0.009 (excl NFLX)",
+    "NLP-only active rate 96.7-98.7% vs Full 69.6-72.7% vs Tech-only 69.6%",
+    "NLP-only trades less frequently (3-6 trades) vs Full/Tech (7-11 trades)",
+    "NLP signals are NOT irrelevant -- they provide trading signal comparable to tech indicators",
+    "ANOVA null result is due to REDUNDANCY (NLP\u2248tech), not irrelevance (NLP\u22480)",
+    "The ranking is: NLP-only > Full > Tech-only (though gaps are small, 1-2pp)"
+  ]
+}

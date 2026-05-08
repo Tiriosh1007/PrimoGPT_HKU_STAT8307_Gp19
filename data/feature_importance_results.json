@@ -1,0 +1,77 @@
+{
+  "weight_importance": {
+    "cash": 0.1419857293367386,
+    "close_price": 0.15298683941364288,
+    "holdings": 0.14185453951358795,
+    "macd": 0.12483431398868561,
+    "boll_ub": 0.14108330011367798,
+    "boll_lb": 0.14917773008346558,
+    "rsi_30": 0.14294704794883728,
+    "cci_30": 0.1434272974729538,
+    "dx_30": 0.13071680068969727,
+    "close_30_sma": 0.14669400453567505,
+    "close_60_sma": 0.14084582030773163,
+    "news_relevance": 0.13324639201164246,
+    "sentiment": 0.14454452693462372,
+    "price_impact_potential": 0.1445935070514679,
+    "trend_direction": 0.14055943489074707,
+    "earnings_impact": 0.14077147841453552,
+    "investor_confidence": 0.14343442022800446,
+    "risk_profile_change": 0.138802632689476
+  },
+  "permutation_importance": {
+    "cash": 0.0031412311363965273,
+    "close_price": 0.0002241558104287833,
+    "holdings": 0.0013258454855531454,
+    "macd": 1.9164857803843915e-05,
+    "boll_ub": 0.000230215911869891,
+    "boll_lb": 9.809415496420115e-05,
+    "rsi_30": 9.300430247094482e-05,
+    "cci_30": 0.0011487440206110477,
+    "dx_30": 9.038345160661265e-05,
+    "close_30_sma": 0.00012155224976595491,
+    "close_60_sma": 0.00016536618932150304,
+    "news_relevance": 1.5585499568260275e-05,
+    "sentiment": 1.1567395631573163e-05,
+    "price_impact_potential": 2.302319808222819e-05,
+    "trend_direction": 9.921406672219746e-06,
+    "earnings_impact": 9.789570867724251e-06,
+    "investor_confidence": 1.4241906683309935e-05,
+    "risk_profile_change": 4.13838370150188e-06
+  },
+  "permutation_std": {
+    "cash": 0.00014126856694929302,
+    "close_price": 2.931132803496439e-05,
+    "holdings": 0.0001217105018440634,
+    "macd": 3.094764906563796e-06,
+    "boll_ub": 3.9886268496047705e-05,
+    "boll_lb": 2.0437271814444102e-05,
+    "rsi_30": 1.43386896525044e-05,
+    "cci_30": 0.00012086887727491558,
+    "dx_30": 1.2282608622626867e-05,
+    "close_30_sma": 2.4366458092117682e-05,
+    "close_60_sma": 2.4126884454744868e-05,
+    "news_relevance": 3.582555791581399e-06,
+    "sentiment": 1.990205191759742e-06,
+    "price_impact_potential": 6.952112016733736e-06,
+    "trend_direction": 1.6565732039452996e-06,
+    "earnings_impact": 2.6261373022862244e-06,
+    "investor_confidence": 4.004629317932995e-06,
+    "risk_profile_change": 9.525437576485274e-07
+  },
+  "gradient_importance": null,
+  "group_summary": {
+    "weight_based": {
+      "cash_price_holdings": 0.1456090360879898,
+      "tech_indicators": 0.13996580243110657,
+      "nlp_features": 0.14085033535957336
+    },
+    "permutation_based": {
+      "cash_price_holdings": 0.001563744144126152,
+      "tech_indicators": 0.0002458156423017499,
+      "nlp_features": 1.260962302954535e-05
+    },
+    "gradient_based": null
+  },
+  "config": "gemini_AAPL_seed2024"
+}
